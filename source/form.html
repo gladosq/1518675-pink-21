@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo" href="index.html">
+          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Изображение логотипа сайта «Pink»">
+        </a>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="">HTML academy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="history">
+        <div class="history__wrapper">
+          <div class="history__header">
+            <h2 class="history__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+          </div>
+          <p class="history__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <form class="form-history" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="form-history__name">
+              <label class="form-history__title" for="second-name">Фамилия:</label>
+              <input type="text" name="second-name" placeholder="Укажите фамилию *">
+              <label class="form-history__title" for="name">Имя:</label>
+              <input type="text" name="name" placeholder="Введите ваше имя *">
+              <label class="form-history__title" for="middle-name">Отчество:</label>
+              <input type="text" name="middle-name" placeholder="Ну и отчество тоже">
+            </fieldset>
+            <fieldset class="form-history__achievements">
+              <legend class="form-history__title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="form-history__achievements-list achievement-content">
+                <li class="form-history__achievements-item">
+                  <input class="achievement-content__input" type="checkbox" name="checkbox-1">
+                  <label class="achievement-content__title" for="checkbox-1">Сделал селфи с акулой</label>
+                </li>
+                <li class="form-history__achievements-item">
+                  <input class="achievement-content__input" type="checkbox" name="checkbox-2">
+                  <label class="achievement-content__title" for="checkbox-2">Обгорел на пляже</label>
+                </li>
+                <li class="form-history__achievements-item">
+                  <input class="achievement-content__input" type="checkbox" name="checkbox-3">
+                  <label class="achievement-content__title" for="checkbox-3">Видел Чака Норриса</label>
+                </li>
+                <li class="form-history__achievements-item">
+                  <input class="achievement-content__input" type="checkbox" name="checkbox-4">
+                  <label class="achievement-content__title" for="checkbox-4">Накупил сувениров</label>
+                </li>
+                <li class="form-history__achievements-item">
+                  <input class="achievement-content__input" type="checkbox" name="checkbox-5">
+                  <label class="achievement-content__title" for="checkbox-5">Удержал башню</label>
+                </li>
+                <li class="form-history__achievements-item">
+                  <input class="achievement-content__input" type="checkbox" name="checkbox-6">
+                  <label class="achievement-content__title" for="checkbox-6">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-history__contacts feedback-contacts">
+              <input class="feedback-contacts__input" type="tel" name="contact-phone" placeholder="Номер, пожалуйста">
+              <label class="feedback-contacts__phone">Номер телефона</label>
+              <input class="feedback-contacts__input" type="email" name="contact-email" placeholder="Введите почту *">
+              <label class="feedback-contacts__email">Адрес почты</label>
+            </fieldset>
+            <fieldset class="form-history__device">
+              <legend class="form-history__title">С каким приложением путешествовали?</legend>
+              <ul class="form-history__device-list device">
+                <li class="device__item">
+                  <input class="device__input" type="radio" name="radio-ios">
+                  <label class="device__title" for="radio-ios">Pink для iOS</label>
+                </li>
+                <li>
+                  <input class="device__input" type="radio" name="radio-android">
+                  <label class="device__title" for="radio-android">Pink для iOS</label>
+                </li>
+                <li>
+                  <input class="device__input" type="radio" name="radio-windows">
+                  <label class="device__title" for="radio-windows">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-history__comment">
+              <legend class="form-history__title">Опишите свои эмоции</legend>
+              <textarea class="form-history__title-text" placeholder="Можно врям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+            <button type="submit">Отправить форму</button>
+            <p class="form-history__caption"><span class="form-history__title">*</span>- обязательные поля</p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo logo" href="index.html">
+          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Изображение логотипа компании «Pink»">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
