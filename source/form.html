@@ -5,9 +5,9 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo logo" href="index.html">
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="header__logo logo" href="index.html">
           <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Изображение логотипа сайта «Pink»">
         </a>
         <nav class="main-nav">
@@ -20,18 +20,18 @@
                 <a href="index.html">Главная</a>
               </li>
               <li class="main-nav__item">
-                <a href="">Фотографии</a>
+                <a href="photo.html">Фотографии</a>
               </li>
               <li class="main-nav__item">
-                <a href="">Конкурс</a>
+                <a href="form.html">Конкурс</a>
               </li>
               <li class="main-nav__item">
-                <a href="">HTML academy</a>
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <section class="history">
@@ -43,37 +43,37 @@
           <form class="form-history" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="form-history__name">
               <label class="form-history__title" for="second-name">Фамилия:</label>
-              <input type="text" name="second-name" placeholder="Укажите фамилию *">
+              <input type="text" name="second-name" id="second-name" placeholder="Укажите фамилию *">
               <label class="form-history__title" for="name">Имя:</label>
-              <input type="text" name="name" placeholder="Введите ваше имя *">
+              <input type="text" name="name" id="name" placeholder="Введите ваше имя *">
               <label class="form-history__title" for="middle-name">Отчество:</label>
-              <input type="text" name="middle-name" placeholder="Ну и отчество тоже">
+              <input type="text" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
             </fieldset>
             <fieldset class="form-history__achievements">
               <legend class="form-history__title">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form-history__achievements-list achievement-content">
                 <li class="form-history__achievements-item">
-                  <input class="achievement-content__input" type="checkbox" name="checkbox-1">
+                  <input class="achievement-content__input" type="checkbox" name="checkbox-1" id="checkbox-1">
                   <label class="achievement-content__title" for="checkbox-1">Сделал селфи с акулой</label>
                 </li>
                 <li class="form-history__achievements-item">
-                  <input class="achievement-content__input" type="checkbox" name="checkbox-2">
+                  <input class="achievement-content__input" type="checkbox" name="checkbox-2" id="checkbox-2">
                   <label class="achievement-content__title" for="checkbox-2">Обгорел на пляже</label>
                 </li>
                 <li class="form-history__achievements-item">
-                  <input class="achievement-content__input" type="checkbox" name="checkbox-3">
+                  <input class="achievement-content__input" type="checkbox" name="checkbox-3" id="checkbox-3">
                   <label class="achievement-content__title" for="checkbox-3">Видел Чака Норриса</label>
                 </li>
                 <li class="form-history__achievements-item">
-                  <input class="achievement-content__input" type="checkbox" name="checkbox-4">
+                  <input class="achievement-content__input" type="checkbox" name="checkbox-4" id="checkbox-4">
                   <label class="achievement-content__title" for="checkbox-4">Накупил сувениров</label>
                 </li>
                 <li class="form-history__achievements-item">
-                  <input class="achievement-content__input" type="checkbox" name="checkbox-5">
+                  <input class="achievement-content__input" type="checkbox" name="checkbox-5" id="checkbox-5">
                   <label class="achievement-content__title" for="checkbox-5">Удержал башню</label>
                 </li>
                 <li class="form-history__achievements-item">
-                  <input class="achievement-content__input" type="checkbox" name="checkbox-6">
+                  <input class="achievement-content__input" type="checkbox" name="checkbox-6" id="checkbox-6">
                   <label class="achievement-content__title" for="checkbox-6">Разгромил отель</label>
                 </li>
               </ul>
@@ -88,15 +88,15 @@
               <legend class="form-history__title">С каким приложением путешествовали?</legend>
               <ul class="form-history__device-list device">
                 <li class="device__item">
-                  <input class="device__input" type="radio" name="radio-ios">
+                  <input class="device__input" type="radio" name="radio-ios" id="radio-ios">
                   <label class="device__title" for="radio-ios">Pink для iOS</label>
                 </li>
                 <li>
-                  <input class="device__input" type="radio" name="radio-android">
+                  <input class="device__input" type="radio" name="radio-android" id="radio-android">
                   <label class="device__title" for="radio-android">Pink для iOS</label>
                 </li>
                 <li>
-                  <input class="device__input" type="radio" name="radio-windows">
+                  <input class="device__input" type="radio" name="radio-windows" id="radio-windows">
                   <label class="device__title" for="radio-windows">Windows Phone</label>
                 </li>
               </ul>
@@ -131,7 +131,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>
