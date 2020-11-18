@@ -1,1 +1,11 @@
-// Начните писать стили здесь
+@import "mixins-variables.scss";
+@import "font-family.scss";
+@import "global.scss";
+@import "blocks/header.scss";
+@import "blocks/promo.scss";
+@import "blocks/advantages.scss";
+@import "blocks/advantages-add.scss";
+@import "blocks/reviews.scss";
+@import "blocks/price.scss";
+@import "blocks/feedback.scss";
+@import "blocks/footer.scss";

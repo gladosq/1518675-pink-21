@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
@@ -10,22 +11,22 @@
         <a class="header__logo logo" href="index.html">
           <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Изображение логотипа компании «Pink»">
         </a>
-        <nav class="main-nav">
-          <div class="main-nav__wrapper">
-            <button class="main-nav__toggle" type="button">
+        <nav class="header__main-nav">
+          <div class="header__main-nav-wrapper">
+            <button class="header__main-nav-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
             </button>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
+            <ul class="header__main-nav-list">
+              <li class="header__main-nav-item">
                 <a href="index.html">Главная</a>
               </li>
-              <li class="main-nav__item">
+              <li class="header__main-nav-item">
                 <a href="photo.html">Фотографии</a>
               </li>
-              <li class="main-nav__item">
+              <li class="header__main-nav-item">
                 <a href="form.html">Конкурс</a>
               </li>
-              <li class="main-nav__item">
+              <li class="header__main-nav-item">
                 <a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
               </li>
             </ul>
@@ -40,7 +41,7 @@
           <header class="promo__header">
             <h2 class="visually-hidden">Доступность приложения Pink</h2>
             <p class="promo__slogan">Взгляните на жизнь иначе!</p>
-            <img class="promo__image" src="https://via.placeholder.com/320x286" width="320" height="286" alt="Изображение смартфона, с установленным приложением «Pink»">
+            <img class="promo__image" src="img/phone.png" width="320" height="286" alt="Изображение смартфона, с установленным приложением «Pink»">
           </header>
           <a class="promo__button" href="">Скачать приложение</a>
           <div class="promo__platforms">
@@ -77,7 +78,7 @@
       </section>
       <section class="advantages-add">
         <div class="advantages-add__wrapper">
-          <h2 class="advantages-add__title">"Эффект на на 24 часа!"</h2>
+          <h2 class="advantages-add__title">Эффект на на 24 часа!</h2>
           <img class="advantages-add__image" src="" width="238" height="276" alt="Изображение часов с цифрой 24 на них">
           <p class="advantages-add__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
           <p class="advantages-add__caption"><a href="">Узнать больше об исследовании</a></p>
@@ -112,26 +113,26 @@
       <section class="price">
         <div class="price__wrapper">
           <h2 class="visually-hidden">Доступные тарифы</h2>
-          <table class="price-table">
-            <tr class="price-table__header">
-              <th class="price-table__item price-table__item--empty">Пустая ячейка</th>
-              <th class="price-table__item"><span>База</span><span>1,99 USD</span></th>
-              <th class="price-table__item price-table__item--top-sale"><span>Стандарт</span><span>3,99 USD</span></th>
-              <th class="price-table__item"><span>Анлим</span><span>9,99 USD</span></th>
+          <table class="price__table">
+            <tr class="price__table-header">
+              <th class="price__table-item price__table-item--empty">Пустая ячейка</th>
+              <th class="price__table-item"><span>База</span><span class="price__caption-price">1,99 USD</span></th>
+              <th class="price__table-item price__table-item--top-sale"><span>Стандарт</span><span class="price__caption-price">3,99 USD</span></th>
+              <th class="price__table-item"><span>Анлим</span><span class="price__caption-price">9,99 USD</span></th>
             </tr>
-            <tr class="price-table__main">
+            <tr class="price__table-main">
               <td class="price__value">Розовый фильтр</td>
               <td class="price__value">Yes</td>
               <td class="price__value">Yes</td>
               <td class="price__value">Yes</td>
             </tr>
-            <tr class="price-table__main">
+            <tr class="price__table-main">
               <td class="price__value">Смайлики</td>
               <td class="price__value">No</td>
               <td class="price__value">Yes</td>
               <td class="price__value">Yes</td>
             </tr>
-            <tr class="price-table__main">
+            <tr class="price__table-main">
               <td class="price__value">Смайлики</td>
               <td class="price__value">No</td>
               <td class="price__value">No</td>
@@ -149,23 +150,23 @@
     <section class="feedback">
       <div class="feedback__wrapper">
         <h2 class="feedback__title"><span>Остались вопросы?<br>Свяжитесь с нами!</span></h2>
-        <div class="feedback__contacts contacts">
-          <div class="contacts__block-1">
-            <p class="contacts__content">
-              <span class="contacts__title">Звоните:</span>
-              <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <div class="feedback__contacts">
+          <div class="feedback__contact-type">
+            <p class="feedback__content">
+              <span class="feedback__text">Звоните:</span>
+              <a class="feedback__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </p>
           </div>
-          <div class="contacts__block-2">
-            <p class="contacts__content">
-              <span class="contacts__title">Пишите:</span>
-              <span class="contacts__text">mail@htmlacademy.ru</span>
+          <div class="feedback__contact-type">
+            <p class="feedback__content">
+              <span class="feedback__text">Пишите:</span>
+              <span class="feedback__value">mail@htmlacademy.ru</span>
             </p>
           </div>
-          <div class="contacts__block-3">
-            <p class="contacts__content">
-              <span class="contacts__title">Приезжайте в гости:</span>
-              <span class="contacts__text">ул. Большая<br>Конюшенная, 19/8</span>
+          <div class="feedback__contact-type">
+            <p class="feedback__content">
+              <span class="feedback__text">Приезжайте в гости:</span>
+              <span class="feedback__value">ул. Большая<br>Конюшенная, 19/8</span>
             </p>
           </div>
         </div>
@@ -176,27 +177,27 @@
         </div>
       </div>
     </section>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <a class="page-footer__logo logo" href="index.html">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="footer__logo logo" href="index.html">
           <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Изображение логотипа компании «Pink»">
         </a>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy"></a>
+        <div class="footer__social social">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--twitter" href="https://twitter.com/htmlacademy"></a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com/htmlacademy"></a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"></a>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--youtube" href="https://www.youtube.com/htmlacademy"></a>
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="footer__copyright copyright">
+          <b class="footer__copyright-text">Разработано:</b>
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>

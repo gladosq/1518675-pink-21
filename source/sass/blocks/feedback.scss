@@ -1,0 +1,11 @@
+.feedback__title {
+  @include fonts(300, 24px, $dark-blue);
+}
+
+.feedback__text {
+  @include fonts(700, 18px, $dark-blue);
+}
+
+.feedback__value {
+  @include fonts(300, 24px, $special-pink);
+}

@@ -1,0 +1,11 @@
+.advantages-add__title {
+  @include fonts(700, 30px, $basic-black);
+}
+
+.advantages-add__description {
+  @include fonts(400, 14px, $dark-blue);
+}
+
+.advantages-add__caption {
+  @include fonts(400, 14px, $special-pink);
+}
