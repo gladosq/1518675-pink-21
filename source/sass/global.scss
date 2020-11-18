@@ -1,11 +1,11 @@
 $dark-blue: #283645;
-$basic-white: #FFFFFF;
+$basic-white: #ffffff;
 $basic-black: #000000;
-$basic-grey: #F2F2F2;
-$special-pink: #D22856;
+$basic-grey: #f2f2f2;
+$special-pink: #d22856;
 
 @mixin fonts($font-weight: 400, $font-size: 14px, $font-color: $basic-white) {
-  font-family: "Opensans", "Arial", san-serif;
+  font-family: "Opensans", "Arial", sans-serif;
   font-weight: $font-weight;
   font-size: $font-size;
   line-height: 28px;
@@ -13,5 +13,5 @@ $special-pink: #D22856;
 }
 
 .page {
-  font-family: "Opensans", "Arial", san-serif;
+  font-family: "Opensans", "Arial", sans-serif;
 }
