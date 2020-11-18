@@ -1,17 +1,12 @@
-$dark-blue: #283645;
-$basic-white: #ffffff;
-$basic-black: #000000;
-$basic-grey: #f2f2f2;
-$special-pink: #d22856;
-
-@mixin fonts($font-weight: 400, $font-size: 14px, $font-color: $basic-white) {
-  font-family: "Opensans", "Arial", sans-serif;
-  font-weight: $font-weight;
-  font-size: $font-size;
-  line-height: 28px;
-  color: $font-color;
-}
-
-.page {
-  font-family: "Opensans", "Arial", sans-serif;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

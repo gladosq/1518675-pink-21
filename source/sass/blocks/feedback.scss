@@ -2,10 +2,10 @@
   @include fonts(300, 24px, $dark-blue);
 }
 
-.contacts__title {
+.feedback__text {
   @include fonts(700, 18px, $dark-blue);
 }
 
-.contacts__text {
+.feedback__value {
   @include fonts(300, 24px, $special-pink);
 }

@@ -1,11 +1,11 @@
-.price-table__item {
+.price__table-item {
   @include fonts(700, 16px, $basic-white);
   text-transform: uppercase;
   height: 94px;
   background-color: $dark-blue;
 }
 
-.price-table__price {
+.price__caption-price {
   @include fonts(300, 18px, $basic-white);
 }
 
