@@ -1,0 +1,17 @@
+$dark-blue: #283645;
+$basic-white: #FFFFFF;
+$basic-black: #000000;
+$basic-grey: #F2F2F2;
+$special-pink: #D22856;
+
+@mixin fonts($font-weight: 400, $font-size: 14px, $font-color: $basic-white) {
+  font-family: "Opensans", "Arial", san-serif;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: 28px;
+  color: $font-color;
+}
+
+.page {
+  font-family: "Opensans", "Arial", san-serif;
+}

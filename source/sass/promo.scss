@@ -1,0 +1,31 @@
+.promo {
+  background: url("../img/back-mobile.png");
+}
+
+.promo__header {
+  position: relative;
+}
+
+.promo__header::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/screen.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 111px;
+  height: 197px;
+  top: 122px;
+  left: 104px;
+}
+
+.promo__slogan {
+  @include fonts(300, 24px);
+}
+
+.promo__button {
+  @include fonts(700, 18px);
+}
+
+.promo__description {
+  @include fonts(300, 14px);
+}

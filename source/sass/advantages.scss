@@ -1,0 +1,15 @@
+.advantages__slogan {
+  @include fonts(300, 24px, $dark-blue);
+}
+
+.advantages__title {
+  @include fonts(700, 18px, $basic-black);
+}
+
+.advantages__description {
+  @include fonts(400, 14px, $dark-blue);
+}
+
+.advantages__wrapper {
+  background: linear-gradient(175deg, $basic-white, $basic-white 30%, $basic-grey 30%, $basic-grey);
+}

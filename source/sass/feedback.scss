@@ -1,0 +1,11 @@
+.feedback__title {
+  @include fonts(300, 24px, $dark-blue);
+}
+
+.contacts__title {
+  @include fonts(700, 18px, $dark-blue);
+}
+
+.contacts__text {
+  @include fonts(300, 24px, $special-pink);
+}

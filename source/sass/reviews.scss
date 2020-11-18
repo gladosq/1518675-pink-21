@@ -1,0 +1,9 @@
+.reviews__autor-name {
+  @include fonts(700, 18px, $basic-black);
+  font-style: normal;
+}
+
+.reviews__text {
+  @include fonts(400, 14px, $dark-blue);
+  line-height: 30px;
+}
