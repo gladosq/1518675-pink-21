@@ -1,0 +1,17 @@
+.photo-of-day__autor {
+  @include fonts(700, 14px, $dark-blue);
+}
+
+.photo-of-day__time {
+  @include fonts(300, 12px, $dark-blue);
+  text-transform: uppercase;
+}
+
+.photo-of-day__comment {
+  @include fonts(400, 14px, $dark-blue);
+}
+
+.photo-of-day__likes {
+  @include fonts(400, 12px, $special-pink);
+  text-transform: uppercase;
+}

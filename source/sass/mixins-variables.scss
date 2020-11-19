@@ -5,9 +5,7 @@ $basic-grey: #f2f2f2;
 $special-pink: #d22856;
 
 @mixin fonts($font-weight: 400, $font-size: 14px, $font-color: $basic-white) {
-  font-family: "Opensans", "Arial", sans-serif;
   font-weight: $font-weight;
   font-size: $font-size;
-  line-height: 28px;
   color: $font-color;
 }
