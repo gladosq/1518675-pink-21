@@ -1,3 +1,26 @@
-.gallery {
-  color: $dark-blue;
+.gallery__list {
+  list-style-type: none;
+}
+
+.gallery__autor {
+  @include fonts(700, 14px, $dark-blue);
+}
+
+.gallery__time {
+  @include fonts(300, 12px, $dark-blue);
+  text-transform: uppercase;
+}
+
+.gallery__likes {
+  @include fonts(400, 12px, $special-pink);
+  text-transform: uppercase;
+}
+
+.gallery__comment,
+.gallery__caption {
+  @include fonts(400, 14px, $dark-blue);
+}
+
+.gallery__item {
+  background-color: $basic-grey;
 }
