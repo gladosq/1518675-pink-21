@@ -37,6 +37,14 @@
   color: $dark-blue;
 }
 
-.contest__button {
-  @include fonts(700, 18px, $dark-blue);
+.button {
+  @include fonts(700, 18px, $basic-white);
+  font-family: inherit;
+  text-transform: uppercase;
+  width: 276px;
+  height: 59px;
+  background-color: $special-green;
+  border: 2px solid $special-green;
+  border-radius: 2px;
+  cursor: pointer;
 }
