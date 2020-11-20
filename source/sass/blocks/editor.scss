@@ -2,9 +2,9 @@
   background-color: $basic-grey;
 }
 
-.editor__button {
+.editor__button-send {
   @include fonts(700, 18px, $special-pink);
-  font-family: "Opensans", "Arial", sans-serif;
+  font-family: inherit;
   border-radius: 30px;
   min-width: 280px;
   min-height: 55px;
@@ -12,13 +12,13 @@
   cursor: pointer;
 }
 
-.editor__button--disabled {
+.editor__button-reset {
   @include fonts(700, 18px, $dark-blue);
-  font-family: "Opensans", "Arial", sans-serif;
+  font-family: inherit;
   border-radius: 30px;
   min-width: 280px;
   min-height: 55px;
   border: 3px solid $dark-blue;
-  cursor: pointer;
   opacity: 0.1;
+  cursor: pointer;
 }
