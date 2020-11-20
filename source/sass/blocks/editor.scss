@@ -2,7 +2,7 @@
   background-color: $basic-grey;
 }
 
-.editor__button-send {
+.editor__button {
   @include fonts(700, 18px, $special-pink);
   font-family: inherit;
   border-radius: 30px;
