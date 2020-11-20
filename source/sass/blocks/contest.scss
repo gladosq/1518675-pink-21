@@ -23,6 +23,7 @@
 .contest__form-input,
 .contest__comment-text {
   @include fonts(400, 18px, $basic-black);
+  font-family: inherit;
 }
 
 .contest__comment-text {
