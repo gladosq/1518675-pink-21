@@ -3,7 +3,7 @@ $basic-white: #ffffff;
 $basic-black: #000000;
 $basic-grey: #f2f2f2;
 $special-pink: #d22856;
-$special-green: #2AAB6D;
+$special-green: #2aab6d;
 
 @mixin fonts($font-weight: 400, $font-size: 14px, $font-color: $basic-white) {
   font-weight: $font-weight;
