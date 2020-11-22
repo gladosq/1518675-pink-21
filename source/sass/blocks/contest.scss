@@ -1,0 +1,31 @@
+.contest__header {
+  background: url("../img/back-mobile.png");
+  height: 235px;
+}
+
+.contest__title {
+  @include fonts(300, 24px, $basic-white);
+}
+
+.contest__slogan,
+.contest__caption-title {
+  @include fonts(400, 14px, $dark-blue);
+}
+
+.contest__form-label {
+  @include fonts(400, 14px, $special-pink);
+  text-transform: uppercase;
+}
+
+.contest__achievement-checkbox,
+.contest__contact-input,
+.contest__device-title,
+.contest__form-input::placeholder,
+.contest__comment-text::placeholder {
+  @include fonts (400, 18px, $dark-blue);
+}
+
+.contest__comment-text {
+  min-width: 276px;
+  min-height: 197px;
+}

@@ -1,0 +1,24 @@
+.editor__wrapper {
+  background-color: $basic-grey;
+}
+
+.editor__button {
+  @include fonts(700, 18px, $special-pink);
+  font-family: inherit;
+  border-radius: 30px;
+  min-width: 280px;
+  min-height: 55px;
+  border: 3px solid $special-pink;
+  cursor: pointer;
+}
+
+.editor__button--reset {
+  @include fonts(700, 18px, $dark-blue);
+  font-family: inherit;
+  border-radius: 30px;
+  min-width: 280px;
+  min-height: 55px;
+  border: 3px solid $dark-blue;
+  opacity: 0.1;
+  cursor: pointer;
+}

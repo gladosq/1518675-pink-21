@@ -1,0 +1,12 @@
+.photo-header__wrapper {
+  background: url("../img/back-mobile.png");
+  height: 235px;
+}
+
+.photo-header__title {
+  @include fonts(300, 24px, $basic-white);
+}
+
+.photo-header__text {
+  @include fonts(400, 14px, $dark-blue);
+}
