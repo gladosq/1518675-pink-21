@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 
-.editor__button-reset {
+.editor__button--reset {
   @include fonts(700, 18px, $dark-blue);
   font-family: inherit;
   border-radius: 30px;
