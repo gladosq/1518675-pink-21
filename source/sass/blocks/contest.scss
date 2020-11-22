@@ -20,12 +20,19 @@
 .contest__achievement-checkbox,
 .contest__contact-input,
 .contest__device-title,
-.contest__form-input::placeholder,
-.contest__comment-text::placeholder {
-  @include fonts (400, 18px, $dark-blue);
+.contest__form-input,
+.contest__comment-text {
+  @include fonts(400, 18px, $basic-black);
+  font-family: inherit;
 }
 
 .contest__comment-text {
   min-width: 276px;
   min-height: 197px;
+}
+
+.contest__form-input::placeholder,
+.contest__comment-text::placeholder,
+.contest__contact-input::placeholder {
+  color: $dark-blue;
 }
