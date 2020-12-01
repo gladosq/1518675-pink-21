@@ -4,12 +4,211 @@
 
 .advantages__title {
   @include fonts(700, 18px, $basic-black);
+  padding: 0;
+  margin: 0;
 }
 
 .advantages__description {
   @include fonts(400, 14px, $dark-blue);
+  line-height: 24px;
 }
 
 .advantages__wrapper {
-  background: linear-gradient(175deg, $basic-white, $basic-white 30%, $basic-grey 30%, $basic-grey);
+  background: linear-gradient(175deg, $basic-white, $basic-white 20%, $basic-grey 20%, $basic-grey);
+  padding: 0 20px;
+  text-align: center;
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+}
+
+.advantages__item {
+  padding-bottom: 18px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .advantages__image-desktop-container {
+    display: none;
+  }
+
+  .advantages__image-mobile-container {
+    position: relative;
+    max-height: 280px;
+    overflow: hidden;
+  }
+
+  .advantages__image-mobile-container::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/iphone-screen-3.png");
+    background-repeat: no-repeat;
+    background-position: 57% 54%;
+    width: 157px;
+    height: 320px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__image-desktop-container {
+    display: none;
+  }
+
+  .advantages__wrapper {
+    background: linear-gradient(175deg, $basic-white, $basic-white 38%, $basic-grey 38%, $basic-grey);
+    display: grid;
+    grid-template-areas:
+      "slogan slogan"
+      "phone advantages"
+      "phone advantages"
+      "phone advantages";
+  }
+
+  .advantages__slogan {
+    font-size: 40px;
+    padding-top: 54px;
+    grid-area: slogan;
+  }
+
+  .advantages__list {
+    text-align: left;
+    padding-top: 110px;
+    padding-left: 40px;
+    grid-area: advantages;
+  }
+
+  .advantages__image-mobile-container {
+    grid-area: phone;
+    position: relative;
+    width: 268px;
+    height: 480px;
+    padding-top: 40px;
+    overflow: hidden;
+  }
+
+  .advantages__item {
+    max-height: 115px;
+  }
+
+  .advantages__slogan p:nth-child(1) {
+    margin: 0;
+    padding-bottom: 14px;
+  }
+
+  .advantages__slogan p:nth-child(2) {
+    width: 400px;
+    margin: auto;
+    line-height: 54px;
+  }
+
+  .advantages__image-mobile-container::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    background-image: url("../img/iphone-3-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 268px;
+    height: 547px;
+  }
+
+  .advantages__image-mobile-container::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: -5px;
+    background-image: url("../img/iphone-screen-3-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 237px;
+    height: 421px;
+  }
+}
+
+@media (min-width: $half-desktop-size) {
+  .advantages__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 940px;
+    margin: auto;
+    background: none;
+  }
+
+  .advantages {
+    background: linear-gradient(175deg, $basic-white, $basic-white 42%, $basic-grey 42%, $basic-grey);
+    z-index: 0;
+  }
+
+  .advantages__image-mobile-container {
+    display: none;
+  }
+
+  .advantages__image-desktop-container {
+    position: relative;
+    display: block;
+    order: -1;
+    z-index: 1;
+    padding-top: 42px;
+    width: 186px;
+    max-height: 262px;
+    overflow: hidden;
+  }
+
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 65px;
+    padding-left: 0;
+  }
+
+  .advantages__slogan {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .advantages__slogan p:nth-child(2) {
+    line-height: 68px;
+  }
+
+  .advantages__slogan p:nth-child(1) {
+    padding: 0;
+  }
+
+  .advantages__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 240px;
+    max-height: none;
+    padding: 0 20px;
+  }
+
+  .advantages__image-desktop-container::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/iphone-1.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 186px;
+    height: 382px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .advantages__title {
+    @include fonts(700, 30px, $basic-black);
+    padding-top: 35px;
+  }
+
+  .advantages__description {
+    @include fonts(400, 18px, $dark-blue);
+    line-height: 30px;
+  }
 }
