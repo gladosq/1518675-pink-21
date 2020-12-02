@@ -2,20 +2,23 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo logo" href="index.html">
-          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Изображение логотипа компании «Pink»">
-        </a>
+        <div class="header__wrapper-top">
+          <a class="header__logo logo" href="index.html">
+            <img class="header__logo-mobile-width" src="img/pink-logo.svg" width="74" height="23" alt="Изображение названия компании «Pink»">
+            <img class="header__logo-tablet-width" src="img/logotype-white-tablet.svg" width="145" height="40" alt="Изображение логотипа компании «Pink»">
+          </a>
+          <button class="header__main-nav-toggle" type="button"></button>
+        </div>
         <nav class="header__main-nav">
           <div class="header__main-nav-wrapper">
-            <button class="header__main-nav-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            </button>
             <ul class="header__main-nav-list">
               <li class="header__main-nav-item">
                 <a href="index.html">Главная</a>
@@ -38,50 +41,73 @@
       <h1 class="visually-hidden">Приложение для улучшения жизни Pink</h1>
       <section class="promo">
         <div class="promo__wrapper">
-          <header class="promo__header">
-            <h2 class="visually-hidden">Доступность приложения Pink</h2>
-            <p class="promo__slogan">Взгляните на жизнь иначе!</p>
-            <img class="promo__image" src="img/phone.png" width="320" height="286" alt="Изображение смартфона, с установленным приложением «Pink»">
-          </header>
-          <a class="promo__button" href="">Скачать приложение</a>
-          <div class="promo__platforms">
-            <a href=""><img src="" width="47" height="56" alt="Изображение платформы Apple"></a>
-            <a href=""><img src="" width="43" height="47" alt="Изображение платформы Android"></a>
-            <a href=""><img src="" width="44" height="41" alt="Изображение платформы Windows"></a>
+          <div class="promo__left-container">
+            <header class="promo__header">
+              <h2 class="visually-hidden">Доступность приложения Pink</h2>
+              <p class="promo__slogan">Взгляните на жизнь иначе!</p>
+              <img class="promo__image" src="img/phone.png" width="320" height="286" alt="Изображение смартфона, с установленным приложением «Pink»">
+            </header>
+            <div class="promo__platforms">
+              <a class="promo__button" href="">Скачать приложение</a>
+              <div class="promo__platforms-wrapper">
+                <a href=""><img src="img/apple-logo.svg" width="47" height="56" alt="Изображение платформы Apple"></a>
+                <a href=""><img src="img/android-logo.svg" width="43" height="47" alt="Изображение платформы Android"></a>
+                <a href=""><img src="img/microsoft-logo.svg" width="44" height="41" alt="Изображение платформы Windows"></a>
+              </div>
+              <p class="promo__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
           </div>
-          <p class="promo__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="promo__right-container">
+            <img class="promo__screen-desktop" src="img/screen-tablet.png" alt="Изображение экрана с установленным приложением «Pink»">
+          </div>
         </div>
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <p class="advantages__slogan">Устали от серости мегаполиса?</p>
-          <p class="advantages__slogan">Нам есть, что вам предложить!</p>
-          <ul class="advantages-list">
+          <div class="advantages__slogan">
+            <p>Устали от серости мегаполиса?</p>
+            <p>Нам есть, что вам предложить!</p>
+          </div>
+          <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__title">Поднимает настроение</h3>
-              <img class="advantages__image advantages__image--mobile" src="" width="157" height="320" alt="Изображение смартфона, с установленным приложением «Pink»">
+              <div class="advantages__image-desktop-container">
+                <img class="advantages__image" src="img/iphone-screen-1.png" width="165" height="294" alt="Изображение смартфона, с установленным приложением «Pink»">
+              </div>
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <img class="advantages__image" src="" width="157" height="320" alt="Изображение смартфона, с установленным приложением «Pink»">
+              <div class="advantages__image-desktop-container">
+                <img class="advantages__image" src="img/iphone-screen-2.png" width="165" height="294" alt="Изображение смартфона, с установленным приложением «Pink»">
+              </div>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Заводит новых друзей</h3>
-              <img class="advantages__image" src="" width="157" height="320" alt="Изображение смартфона, с установленным приложением «Pink»">
+              <div class="advantages__image-desktop-container">
+                <img class="advantages__image" src="img/iphone-screen-3-desktop.png" width="165" height="294" alt="Изображение смартфона, с установленным приложением «Pink»">
+              </div>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
+          <div class="advantages__image-mobile-container">
+            <img class="advantages__image-mobile" src="img/iphone-3.png" width="157" height="320" alt="Изображение смартфона, с установленным приложением «Pink»">
+          </div>
         </div>
       </section>
       <section class="advantages-add">
         <div class="advantages-add__wrapper">
-          <h2 class="advantages-add__title">Эффект на на 24 часа!</h2>
-          <img class="advantages-add__image" src="" width="238" height="276" alt="Изображение часов с цифрой 24 на них">
-          <p class="advantages-add__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <p class="advantages-add__caption"><a href="">Узнать больше об исследовании</a></p>
+          <div class="advantages-add__content-container">
+            <h2 class="advantages-add__title">Эффект на 24 часа!</h2>
+            <p class="advantages-add__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <p class="advantages-add__caption"><a href="">Узнать больше об исследовании</a></p>
+          </div>
+          <div class="advantages-add__image-container">
+            <img class="advantages-add__image-tablet" src="img/timer.svg" width="238" height="276" alt="Изображение часов с цифрой 24 на них">
+            <img class="advantages-add__image-desktop" src="img/timer.svg" width="298" height="345" alt="Изображение часов с цифрой 24 на них">
+          </div>
         </div>
       </section>
       <section class="reviews">
@@ -91,22 +117,25 @@
             <blockquote class="reviews__item slider__item">
               <cite class="reviews__autor-name">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="reviews__function">25 лет, водитель трамвая</p>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item slider__item visually-hidden">
               <cite class="reviews__autor-name">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="reviews__function">25 лет, водитель трамвая</p>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item slider__item visually-hidden">
               <cite class="reviews__autor-name">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="reviews__function">25 лет, водитель трамвая</p>
             </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <button class="reviews__prev" type="button"></button>
+            <button class="reviews__next" type="button"></button>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+          <p class="reviews__toggles slider-toggles">
+            <button class="reviews__slider-toggle reviews__slider-toggle--current" type="button"></button>
+            <button class="reviews__slider-toggle" type="button"></button>
+            <button class="reviews__slider-toggle" type="button"></button>
           </p>
         </div>
       </section>
@@ -115,34 +144,34 @@
           <h2 class="visually-hidden">Доступные тарифы</h2>
           <table class="price__table">
             <tr class="price__table-header">
-              <th class="price__table-item price__table-item--empty">Пустая ячейка</th>
+              <th class="price__table-item-empty">Пустая ячейка</th>
               <th class="price__table-item"><span>База</span><span class="price__caption-price">1,99 USD</span></th>
-              <th class="price__table-item price__table-item--top-sale"><span>Стандарт</span><span class="price__caption-price">3,99 USD</span></th>
+              <th class="price__table-item"><span class="price__top-sale">Стандарт</span><span class="price__caption-price">3,99 USD</span></th>
               <th class="price__table-item"><span>Анлим</span><span class="price__caption-price">9,99 USD</span></th>
             </tr>
             <tr class="price__table-main">
-              <td class="price__value">Розовый фильтр</td>
-              <td class="price__value">Yes</td>
-              <td class="price__value">Yes</td>
-              <td class="price__value">Yes</td>
+              <td class="price__value-empty">Розовый фильтр</td>
+              <td class="price__value price__value--positive"><span class="price__value-mobile">Розовый фильтр</span></td>
+              <td class="price__value price__value--positive"><span class="price__value-mobile">Розовый фильтр</span></td>
+              <td class="price__value price__value--negative"><span class="price__value-mobile">Розовый фильтр</span></td>
             </tr>
             <tr class="price__table-main">
-              <td class="price__value">Смайлики</td>
-              <td class="price__value">No</td>
-              <td class="price__value">Yes</td>
-              <td class="price__value">Yes</td>
+              <td class="price__value-empty">Смайлики</td>
+              <td class="price__value price__value--negative"><span class="price__value-mobile">Смайлики</span></td>
+              <td class="price__value price__value--positive"><span class="price__value-mobile">Смайлики</span></td>
+              <td class="price__value price__value--positive"><span class="price__value-mobile">Смайлики</span></td>
             </tr>
             <tr class="price__table-main">
-              <td class="price__value">Смайлики</td>
-              <td class="price__value">No</td>
-              <td class="price__value">No</td>
-              <td class="price__value">Yes</td>
+              <td class="price__value-empty">Комментарии</td>
+              <td class="price__value price__value--negative"><span class="price__value-mobile">Комментарии</span></td>
+              <td class="price__value price__value--negative"><span class="price__value-mobile">Комментарии</span></td>
+              <td class="price__value price__value--positive"><span class="price__value-mobile">Комментарии</span></td>
             </tr>
           </table>
           <p class="price__toggles">
-            <button class="price__toggle price__toggle--current" type="button">1</button>
-            <button class="price__toggle" type="button">2</button>
-            <button class="price__toggle" type="button">3</button>
+            <button class="price__toggle" type="button"></button>
+            <button class="price__toggle price__toggle--current" type="button"></button>
+            <button class="price__toggle" type="button"></button>
           </p>
         </div>
       </section>
@@ -172,7 +201,7 @@
         </div>
         <div class="feedback__map">
           <a href="">
-            <img src="https://via.placeholder.com/320x200" width="320" height="200" alt="Изображение карты с нашим адресом">
+            <img src="img/map-mobile.png" width="320" height="200" alt="Изображение карты">
           </a>
         </div>
       </div>
@@ -180,24 +209,33 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo logo" href="index.html">
-          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Изображение логотипа компании «Pink»">
+          <img class="footer__logo-image" src="img/glasses-logo-pink.svg" width="59" height="40" alt="Изображение логотипа компании «Pink»">
+          <img class="footer__logo-image" src="img/pink-logo-dark.svg" width="74" height="23" alt="Изображение названия компании «Pink»">
         </a>
         <div class="footer__social social">
           <ul class="footer__social-list">
             <li class="footer__social-item">
-              <a class="footer__social-link footer__social-link--twitter" href="https://twitter.com/htmlacademy"></a>
+              <a class="footer__social-link footer__social-link--twitter" href="https://twitter.com/htmlacademy">
+                <img src="img/twitter.svg" width="18" height="14" alt="Изображение логотипа социальной сети «Twitter»">
+              </a>
             </li>
             <li class="footer__social-item">
-              <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+              <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com/htmlacademy">
+                <img src="img/facebook.svg" width="9" height="18" alt="Изображение логотипа социальной сети «Facebook»">
+              </a>
             </li>
             <li class="footer__social-item">
-              <a class="footer__social-link footer__social-link--youtube" href="https://www.youtube.com/htmlacademy"></a>
+              <a class="footer__social-link footer__social-link--youtube" href="https://www.youtube.com/htmlacademy">
+                <img src="img/youtube.svg" width="15" height="13" alt="Изображение логотипа сайта «Youtube»">
+              </a>
             </li>
           </ul>
         </div>
         <div class="footer__copyright copyright">
-          <b class="footer__copyright-text">Разработано:</b>
-          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <b class="footer__copyright-text">Разработано</b>
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/html-academy-logo.svg" width="27" height="34" alt="Логотип компании «HTML-academy»">
+          </a>
         </div>
       </div>
     </footer>

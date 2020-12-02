@@ -1,11 +1,116 @@
 .advantages-add__title {
   @include fonts(700, 30px, $basic-black);
+  width: 170px;
+  line-height: 36px;
+  margin-bottom: 0;
 }
 
 .advantages-add__description {
   @include fonts(400, 14px, $dark-blue);
+  line-height: 24px;
 }
 
 .advantages-add__caption {
   @include fonts(400, 14px, $special-pink);
+}
+
+.advantages-add__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px 30px;
+  max-width: 940px;
+  margin: auto;
+}
+
+.advantages-add__image-container {
+  order: -1;
+  position: relative;
+  width: 500px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.advantages-add__content-container {
+  padding-left: 70px;
+}
+
+.advantages-add__caption a {
+  color: $special-pink;
+}
+
+.advantages-add__image-container::before {
+  content: "";
+  position: absolute;
+  width: 158px;
+  height: 158px;
+  border: 18px solid $special-pink;
+  border-radius: 50%;
+  top: 59px;
+  right: 22px;
+}
+
+.advantages-add__image-container::after {
+  @include fonts(700, 96px, $special-pink);
+  content: "24";
+  position: absolute;
+  top: 138px;
+  right: 64px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .advantages-add {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-add__image-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $half-desktop-size) {
+  .advantages-add {
+    background-color: $basic-grey;
+  }
+
+  .advantages-add__image-tablet {
+    display: none;
+  }
+
+  .advantages-add__image-desktop {
+    display: block;
+  }
+
+  .advantages-add__image-container::before {
+    content: "";
+    position: absolute;
+    width: 215px;
+    height: 215px;
+    border: 18px solid $special-pink;
+    border-radius: 50%;
+    top: 69px;
+    right: 22px;
+  }
+
+  .advantages-add__image-container::after {
+    @include fonts(700, 120px, $special-pink);
+    content: "24";
+    position: absolute;
+    top: 175px;
+    right: 80px;
+  }
+
+  .advantages-add__description {
+    @include fonts(400, 18px, $dark-blue);
+    line-height: 30px;
+  }
+
+  .advantages-add__caption {
+    font-size: 18px;
+  }
+
+  .advantages-add__content-container {
+    padding-top: 75px;
+  }
 }

@@ -1,12 +1,23 @@
-.promo {
+.promo__header {
   background: url("../img/back-mobile.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 400px;
 }
 
-.promo__header {
+.promo__slogan {
+  @include fonts(300, 24px);
+  padding: 0;
+  margin: 0;
+  padding-top: 24px;
+  text-align: center;
   position: relative;
 }
 
-.promo__header::before {
+.promo__slogan::before {
   content: "";
   position: absolute;
   background-image: url("../img/screen.png");
@@ -14,18 +25,123 @@
   background-position: 0 0;
   width: 111px;
   height: 197px;
-  top: 84px;
-  left: 104px;
-}
-
-.promo__slogan {
-  @include fonts(300, 24px);
+  top: 146px;
+  left: 96px;
 }
 
 .promo__button {
   @include fonts(700, 18px);
+  text-decoration: none;
+  display: inline-block;
+  min-width: 280px;
+  border: 3px solid $basic-white;
+  border-radius: 29px;
+  padding: 10px 0;
+}
+
+.promo__platforms {
+  background-color: $darkest-blue;
+  height: 270px;
+  padding-top: 26px;
+  text-align: center;
+}
+
+.promo__platforms-wrapper {
+  display: flex;
+  width: 220px;
+  margin: auto;
+  justify-content: space-between;
+  padding: 40px 40px 0 40px;
 }
 
 .promo__description {
   @include fonts(300, 14px);
+  padding: 0 16px;
+}
+
+.promo__screen-desktop {
+  padding-top: 130px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .promo__screen-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__header {
+    background: none;
+    max-width: 270px;
+    min-height: 140px;
+  }
+
+  .promo {
+    background: url("../img/back-tablet.png");
+    background-size: cover;
+  }
+
+  .promo__platforms {
+    background: none;
+    max-width: 270px;
+  }
+
+  .promo__image {
+    display: none;
+  }
+
+  .promo__left-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    min-height: 620px;
+    z-index: 1;
+  }
+
+  .promo__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .promo__right-container {
+    position: relative;
+    padding-right: 80px;
+  }
+
+  .promo__right-container::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/phone-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 660px;
+    height: 545px;
+    left: -370px;
+    top: 75px;
+    z-index: 0;
+  }
+
+  .promo__slogan {
+    @include fonts(300, 40px);
+    line-height: 48px;
+    width: 229px;
+    padding-top: 100px;
+  }
+
+  .promo__slogan::before {
+    visibility: hidden;
+  }
+
+  .promo__description {
+    font-size: 18px;
+    padding: 0;
+    min-width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__wrapper {
+    max-width: 950px;
+    margin: auto;
+  }
 }

@@ -7,3 +7,172 @@
   @include fonts(400, 14px, $dark-blue);
   line-height: 30px;
 }
+
+.reviews__item {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.reviews__slider-toggle {
+  position: relative;
+  border: 0;
+  background: transparent;
+  width: 22px;
+}
+
+.reviews__slider-toggle::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: $dark-blue;
+  border-radius: 50%;
+  opacity: 0.3;
+  margin-top: 3px;
+}
+
+.reviews__slider-toggle--current::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 3px solid $dark-blue;
+  border-radius: 50%;
+  background: transparent;
+  opacity: 1;
+  margin-top: 0;
+}
+
+.reviews__toggles {
+  text-align: center;
+}
+
+.reviews__function {
+  @include fonts(400, 14px, $dark-blue);
+}
+
+.reviews__prev,
+.reviews__next {
+  display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .reviews__prev,
+  .reviews__next,
+  .reviews__function {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .reviews__text {
+    order: -1;
+    font-size: 18px;
+  }
+
+  .reviews__autor-name {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $half-desktop-size) {
+  .reviews__wrapper {
+    max-width: 940px;
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  .reviews__text {
+    max-width: 700px;
+    position: relative;
+  }
+
+  .reviews__text::before {
+    content: "";
+    position: absolute;
+    background: url("../img/quotes.svg");
+    width: 79px;
+    height: 63px;
+    top: -100px;
+    left: 317px;
+  }
+
+  .reviews__list {
+    padding-top: 120px;
+  }
+
+  .reviews__autor-name {
+    padding-top: 20px;
+  }
+
+  .reviews__function {
+    margin: 0;
+    padding: 0;
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .reviews__prev::before,
+  .reviews__prev::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background-color: $dark-blue;
+    opacity: 0.3;
+  }
+
+  .reviews__prev::before {
+    transform: rotate(45deg);
+    top: -145px;
+    left: 0;
+  }
+
+  .reviews__prev::after {
+    transform: rotate(-45deg);
+    top: -170px;
+    left: 0;
+  }
+
+  .reviews__next::before,
+  .reviews__next::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background-color: $dark-blue;
+    opacity: 0.3;
+  }
+
+  .reviews__next::before {
+    transform: rotate(-45deg);
+    top: -145px;
+    left: 910px;
+  }
+
+  .reviews__next::after {
+    transform: rotate(45deg);
+    top: -170px;
+    left: 910px;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
+}
