@@ -1,6 +1,12 @@
 .page {
   font-family: "Opensans", "Arial", sans-serif;
   line-height: 28px;
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
 }
 
 .visually-hidden {
