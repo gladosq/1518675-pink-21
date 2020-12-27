@@ -1,12 +1,50 @@
 .photo-header__wrapper {
   background: url("../img/back-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 235px;
+  background-position: 50% -50px;
 }
 
 .photo-header__title {
   @include fonts(300, 24px, $basic-white);
+  margin: auto;
+  text-align: center;
+  padding-top: 80px;
+  max-width: 200px;
 }
 
 .photo-header__text {
   @include fonts(400, 14px, $dark-blue);
+  text-align: center;
+  max-width: 248px;
+  margin: auto;
+  padding: 50px 0 50px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .photo-header__wrapper {
+    height: 440px;
+    background: url("../img/back-tablet.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% -50px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/back-tablet@2x.png");
+  }
+
+  .photo-header__title {
+    font-size: 50px;
+    line-height: 68px;
+    max-width: 360px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-header__wrapper {
+    height: 394px;
+  }
 }

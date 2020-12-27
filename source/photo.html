@@ -2,20 +2,27 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo logo" href="index.html">
-          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Изображение логотипа компании «Pink»">
-        </a>
+        <div class="header__wrapper-top">
+          <a class="header__logo logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-white-tablet.svg">
+              <img class="header__logo-mobile-width" src="img/pink-logo.svg" width="74" height="23" alt="Логотип компании «Pink»">
+            </picture>
+<!--             <img class="header__logo-tablet-width" src="img/logotype-white-tablet.svg" width="145" height="40" alt="Изображение логотипа компании «Pink»"> -->
+          </a>
+          <button class="header__main-nav-toggle" type="button"></button>
+        </div>
         <nav class="header__main-nav">
           <div class="header__main-nav-wrapper">
-            <button class="header__main-nav-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            </button>
             <ul class="header__main-nav-list">
               <li class="header__main-nav-item">
                 <a href="index.html">Главная</a>
@@ -46,7 +53,11 @@
       <section class="photo-of-day">
         <div class="photo-of-day__wrapper">
           <h2 class="visually-hidden">Фото дня</h2>
-          <img class="photo-of-day__image photo-of-day__image--top-day" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Изображение панорамы леса с большой высоты">
+          <picture>
+            <source media="min-width: 1200px" srcset="img/panorama-desktop.png 1x, img/panorama-desktop@2x.png 2x">
+            <source media="min-width: 768px" srcset="img/panorama-tablet.png 1x, img/panorama-tablet@2x.png 2x">
+            <img class="photo-of-day__image photo-of-day__image--top-day" src="img/panorama-mobile.png" srcset="img/panorama-mobile@2x.png 2x" alt="Изображение панорамы леса с большой высоты">
+          </picture>
           <p class="photo-of-day__autor">Анна<span class="photo-of-day__time">(5 минут назад)</span></p>
           <p class="photo-of-day__likes">Нравится: 215</p>
           <p class="photo-of-day__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
