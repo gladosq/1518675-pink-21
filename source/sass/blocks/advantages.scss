@@ -1,5 +1,7 @@
 .advantages__slogan {
   @include fonts(300, 24px, $dark-blue);
+  margin: 40px auto auto auto;
+  max-width: 300px;
 }
 
 .advantages__title {
@@ -71,6 +73,8 @@
     font-size: 40px;
     padding-top: 54px;
     grid-area: slogan;
+    margin: auto;
+    max-width: 600px;
   }
 
   .advantages__list {
@@ -168,6 +172,7 @@
   .advantages__slogan {
     font-size: 50px;
     line-height: 68px;
+    max-width: 750px;
   }
 
   .advantages__slogan p:nth-child(2) {

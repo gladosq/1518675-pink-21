@@ -26,6 +26,7 @@
 .footer__social-item {
   position: relative;
   padding: 0 28px;
+  cursor: pointer;
 }
 
 .footer__social-item::before {
@@ -36,12 +37,38 @@
   border: 3px solid $dark-blue;
   border-radius: 50%;
   opacity: 0.1;
-  left: 8px;
+  left: 7px;
   top: -13px;
+}
+
+.footer__social-item:nth-child(1)::before {
+  left: 10px;
+}
+
+.footer__social-item:nth-child(2)::before {
+  top: -14px;
+}
+
+.footer__social-item:nth-child(3)::before {
+  left: 8px;
+}
+
+.footer__social-item:hover::before {
+  opacity: 1;
+}
+
+.footer__social-item:active {
+  opacity: 0.2;
 }
 
 .footer__copyright {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    padding: 38px 0;
+  }
 }

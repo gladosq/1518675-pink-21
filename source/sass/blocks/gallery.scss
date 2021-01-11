@@ -1,9 +1,15 @@
 .gallery__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .gallery__autor {
   @include fonts(700, 14px, $dark-blue);
+  padding-left: 16px;
+  padding-top: 10px;
+  margin: 0;
+  line-height: 24px;
 }
 
 .gallery__time {
@@ -14,6 +20,20 @@
 .gallery__likes {
   @include fonts(400, 12px, $special-pink);
   text-transform: uppercase;
+  margin: 0;
+  padding: 10px 0 18px 50px;
+  position: relative;
+}
+
+.gallery__likes::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/heart.svg");
+  width: 13px;
+  height: 12px;
+  left: 16px;
+  top: 16px;
+
 }
 
 .gallery__comment,
@@ -21,6 +41,95 @@
   @include fonts(400, 14px, $dark-blue);
 }
 
+.gallery__comment {
+  margin: 0;
+  padding-left: 16px;
+  line-height: 24px;
+}
+
+.gallery__caption {
+  text-align: center;
+  padding: 20px 20px 30px;
+
+}
+
 .gallery__item {
   background-color: $basic-grey;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.gallery__wrapper {
+  padding-top: 20px;
+}
+
+.gallery__photo {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery__item:nth-child(1n) {
+    margin-right: 10px;
+
+  }
+
+  .gallery__item:nth-child(2n) {
+    margin-left: 10px;
+    margin-right: 20px;
+
+  }
+
+  .gallery__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .gallery__autor {
+    padding-left: 30px;
+  }
+
+  .gallery__comment {
+    flex-grow: 1;
+    padding-left: 30px;
+    padding-right: 15px;
+    min-height: 50px;
+  }
+
+  .gallery__likes {
+    padding-left: 30px;
+  }
+
+  .gallery__likes::before {
+    left: 90%;
+  }
+}
+
+@media (min-width: $half-desktop-size) {
+  .gallery__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 900px;
+    margin: auto;
+    grid-gap: 20px;
+  }
+
+  .gallery__item:nth-child(1n),
+  .gallery__item:nth-child(2n) {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 940px;
+    margin: auto;
+  }
 }

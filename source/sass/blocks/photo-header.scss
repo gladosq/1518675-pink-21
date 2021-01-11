@@ -2,21 +2,24 @@
   background: url("../img/back-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 235px;
-  background-position: 50% -50px;
+  height: 237px;
+  background-position: 50% 10px;
+  margin-top: -86px;
+  padding-top: 20px;
 }
 
 .photo-header__title {
   @include fonts(300, 24px, $basic-white);
   margin: auto;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 110px;
   max-width: 200px;
 }
 
 .photo-header__text {
   @include fonts(400, 14px, $dark-blue);
   text-align: center;
+  line-height: 30px;
   max-width: 248px;
   margin: auto;
   padding: 50px 0 50px;
@@ -25,15 +28,20 @@
 
 @media (min-width: $tablet-width) {
   .photo-header__wrapper {
-    height: 440px;
+    height: 400px;
     background: url("../img/back-tablet.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% -50px;
+    background-position: 50% 30px;
+    padding-top: 90px;
+    margin-top: -138px;
   }
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/back-tablet@2x.png");
+    .photo-header__wrapper {
+      background: url("../img/back-tablet@2x.png");
+      background-size: cover;
+    }
   }
 
   .photo-header__title {
@@ -41,10 +49,22 @@
     line-height: 68px;
     max-width: 360px;
   }
+
+  .photo-header__text {
+    font-size: 18px;
+    max-width: 500px;
+    padding: 80px 0 70px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .photo-header__wrapper {
-    height: 394px;
+    height: 370px;
+    background: url("../img/back-desktop.png");
+    background-size: cover;
+  }
+
+  .photo-header__text {
+    max-width: 600px;
   }
 }

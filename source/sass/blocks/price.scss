@@ -70,6 +70,8 @@
   border: 0;
   background: transparent;
   width: 22px;
+  cursor: pointer;
+  outline: none;
 }
 
 .price__toggle::before {
@@ -80,6 +82,10 @@
   background-color: $dark-blue;
   border-radius: 50%;
   opacity: 0.3;
+}
+
+.price__toggle--current {
+  position: relative;
 }
 
 .price__toggle--current::before {
@@ -93,6 +99,19 @@
   opacity: 1;
   left: 8px;
   top: -2px;
+}
+
+.price__toggle:hover::before {
+  opacity: 0.6;
+}
+
+.price__toggle:active::before {
+  opacity: 0.1;
+}
+
+.price__toggle--current:hover::before,
+.price__toggle--current:active::before {
+  opacity: 1;
 }
 
 .price__toggles {

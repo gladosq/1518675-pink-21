@@ -1,5 +1,9 @@
 .photo-of-day__autor {
   @include fonts(700, 14px, $dark-blue);
+  margin: 0;
+  padding-top: 16px;
+  padding-left: 16px;
+  grid-area: autor;
 }
 
 .photo-of-day__time {
@@ -9,9 +13,112 @@
 
 .photo-of-day__comment {
   @include fonts(400, 14px, $dark-blue);
+  padding-left: 16px;
+  padding-right: 14px;
+  margin: 0;
+  grid-area: text;
 }
 
 .photo-of-day__likes {
   @include fonts(400, 12px, $special-pink);
   text-transform: uppercase;
+  position: relative;
+  margin: 0;
+  padding: 10px 0 18px 50px;
+  grid-area: likes;
+}
+
+.photo-of-day__likes::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/heart.svg");
+  width: 13px;
+  height: 12px;
+  left: 16px;
+  top: 16px;
+}
+
+.photo-of-day__image {
+  width: 100%;
+  height: auto;
+}
+
+.photo-of-day__container {
+  background: $basic-grey;
+  margin: -8px 20px 0;
+}
+
+.photo-of-day__wrapper {
+  position: relative;
+}
+
+.photo-of-day__wrapper::before {
+  content: "Панорама дня";
+  position: absolute;
+  text-transform: uppercase;
+  color: $basic-white;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  font-size: 12px;
+  position: absolute;
+  width: 140px;
+  height: 30px;
+  background-color: $special-pink;
+  right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-of-day__container {
+    display: grid;
+    grid-template-areas:
+      "autor likes"
+      "text text";
+  }
+
+  .photo-of-day__likes {
+    justify-self: end;
+    padding-right: 70px;
+    padding-bottom: 0;
+    margin-top: 8px;
+  }
+
+  .photo-of-day__likes::before {
+    left: 160px;
+  }
+
+  .photo-of-day__comment {
+    padding-bottom: 20px;
+  }
+
+  .photo-of-day__wrapper {
+    padding-bottom: 30px;
+  }
+
+  .photo-of-day__wrapper::before {
+    top: 50px;
+  }
+}
+
+@media (min-width: $half-desktop-size) {
+  .photo-of-day__container {
+    max-width: 900px;
+    margin: -8px auto;
+  }
+
+  .photo-of-day__wrapper::before {
+    right: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-of-day__container {
+    max-width: 940px;
+    margin: -8px auto;
+  }
+
+  .photo-of-day__wrapper::before {
+    right: 128px;
+  }
 }
