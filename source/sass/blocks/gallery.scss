@@ -33,7 +33,6 @@
   height: 12px;
   left: 16px;
   top: 16px;
-
 }
 
 .gallery__comment,
@@ -50,7 +49,6 @@
 .gallery__caption {
   text-align: center;
   padding: 20px 20px 30px;
-
 }
 
 .gallery__item {
@@ -77,13 +75,11 @@
 
   .gallery__item:nth-child(1n) {
     margin-right: 10px;
-
   }
 
   .gallery__item:nth-child(2n) {
     margin-left: 10px;
     margin-right: 20px;
-
   }
 
   .gallery__item {

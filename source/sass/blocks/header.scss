@@ -148,22 +148,15 @@
     background-color: $dark-blue;
     opacity: 0.99;
   }
-
-
-
 }
 
 @media (min-width: $half-desktop-size) {
   .header__main-nav-item a:active {
     color: $basic-half-white;
   }
+
   .header__main-nav--closed .header__main-nav-wrapper {
     display: block;
-  }
-
-  .header__main-nav {
-    display: flex;
-    justify-content: space-between;
   }
 
   .header__main-nav {
@@ -245,4 +238,3 @@
     justify-content: space-between;
   }
 }
-

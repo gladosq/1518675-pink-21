@@ -62,10 +62,11 @@
     @include fonts(300, 40px, $dark-blue);
     line-height: 54px;
   }
+
   .feedback__map-image {
-  width: 100%;
-  height: auto;
-}
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (min-width: $desktop-width) {

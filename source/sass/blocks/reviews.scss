@@ -208,7 +208,6 @@
   .reviews__prev:active::after {
     opacity: 0.1;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -216,5 +215,4 @@
   .reviews__next::after {
     left: 910px;
   }
-
 }

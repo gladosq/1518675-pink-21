@@ -24,6 +24,11 @@
   z-index: 6;
 }
 
+.map__widget {
+  border: none;
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .map__decoration-left {
     height: 200px;
@@ -68,7 +73,7 @@
 }
 
 @media (min-width: $desktop-width) {
-   .map__decoration-left {
+  .map__decoration-left {
     background: linear-gradient(10deg, transparent, transparent 50%, white 50%, white);
   }
 

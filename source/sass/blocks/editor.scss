@@ -255,13 +255,11 @@
 
   .editor__button {
     min-width: 260px;
-
   }
 
   .editor__button-wrapper {
     text-align: right;
     padding-top: 40px;
-
   }
 
   .editor__config {
@@ -296,9 +294,7 @@
     max-width: 860px;
     margin: auto;
   }
-
 }
-
 
 @media (min-width: $desktop-width) {
   .editor__wrapper {
@@ -391,7 +387,4 @@
     width: 0;
     height: 0;
   }
-
-
 }
-
