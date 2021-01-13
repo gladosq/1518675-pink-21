@@ -62,15 +62,10 @@ exports.scripts = scripts;
 // Images
 
 const images = () => {
-  return gulp.src('source/img/*.{jpg,png,svg}')
+  return gulp.src('source/img/*.{jpg,png}')
     .pipe(imagemin([
       imagemin.mozjpeg({progressive: true}),
       imagemin.optipng({optimizationLevel: 3}),
-      imagemin.svgo(imagemin.svgo({
-        plugins: [
-          { cleanupIDs: false }
-        ]
-      }))
     ]))
     .pipe(gulp.dest('build/img'))
 }
