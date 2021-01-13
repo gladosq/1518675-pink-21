@@ -52,6 +52,13 @@
     width: 157px;
     height: 320px;
   }
+
+  @media (min-resolution: 2dppx) {
+    .advantages__image-mobile-container::before {
+      background-image: url("../img/iphone-screen-3@2x.png");
+      background-size: 90%;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -129,6 +136,18 @@
     background-position: 0 0;
     width: 237px;
     height: 421px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .advantages__image-mobile-container::before {
+      background-image: url("../img/iphone-3-tablet@2x.png");
+      background-size: cover;
+    }
+
+    .advantages__image-mobile-container::after {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: cover;
+    }
   }
 }
 
@@ -238,5 +257,12 @@
   .advantages__description {
     @include fonts(400, 18px, $dark-blue);
     line-height: 30px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .advantages__image-desktop-container::before {
+      background-image: url("../img/iphone-1@2x.png");
+      background-size: cover;
+    }
   }
 }

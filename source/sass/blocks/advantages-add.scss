@@ -84,25 +84,19 @@
 
   .advantages-add__image-container::before {
     content: "";
-    position: absolute;
     width: 215px;
     height: 215px;
-    border: 18px solid $special-pink;
-    border-radius: 50%;
     top: 69px;
-    right: 22px;
   }
 
   .advantages-add__image-container::after {
-    @include fonts(700, 120px, $special-pink);
-    content: "24";
-    position: absolute;
+    font-size: 120px;
     top: 175px;
     right: 80px;
   }
 
   .advantages-add__description {
-    @include fonts(400, 18px, $dark-blue);
+    font-size: 18px;
     line-height: 30px;
   }
 

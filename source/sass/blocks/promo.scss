@@ -86,6 +86,17 @@
   padding-top: 130px;
 }
 
+.promo__mobile-image {
+  margin-bottom: -8px;
+}
+
+@media (min-resolution: 2dppx) {
+  .promo__header {
+    background: url("../img/back-mobile@2x.png");
+    background-size: cover;
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .promo__screen-desktop {
     display: none;
@@ -118,7 +129,7 @@
     max-width: 270px;
   }
 
-  .promo__image {
+  .promo__mobile-image {
     display: none;
   }
 
@@ -182,6 +193,12 @@
   @media (min-resolution: 2dppx) {
     .promo {
       background-image: url("../img/back-tablet@2x.png");
+      background-size: cover;
+    }
+
+    .promo__right-container::before {
+      background-image: url("../img/phone-tablet@2x.png");
+      background-size: cover;
     }
   }
 }
@@ -237,5 +254,17 @@
 
   .promo__description {
     padding-top: 20px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .promo {
+      background: url("../img/back-desktop@2x.png");
+      background-size: cover;
+    }
+
+    .promo__right-container::before {
+      background-image: url("../img/phone-desktop@2x.png");
+      background-size: cover;
+    }
   }
 }

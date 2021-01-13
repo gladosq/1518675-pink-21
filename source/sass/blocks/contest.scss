@@ -333,6 +333,13 @@
   display: none;
 }
 
+@media (min-resolution: 2dppx) {
+  .contest__header {
+    background: url("../img/back-mobile@2x.png");
+    background-size: cover;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .contest__comment {
     order: 2;
@@ -640,5 +647,12 @@
 
   .contest__title {
     max-width: 800px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .contest__header {
+      background: url("../img/back-desktop@2x.png");
+      background-size: cover;
+    }
   }
 }

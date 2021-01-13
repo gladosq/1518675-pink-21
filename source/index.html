@@ -64,7 +64,10 @@
             <header class="promo__header">
               <h2 class="visually-hidden">Доступность приложения Pink</h2>
               <p class="promo__slogan">Взгляните на жизнь иначе!</p>
-              <img class="promo__image" src="img/phone.png" width="320" height="286" alt="Изображение смартфона, с установленным приложением «Pink»">
+              <picture>
+                <source type="image/webp" srcset="img/phone-mobile.webp 1x, img/phone-mobile@2x.webp 2x">
+                <img class="promo__mobile-image" src="img/phone-mobile.png" srcset="img/phone-mobile@2x.png 2x" width="320" height="286" alt="Изображение смартфона, с установленным приложением «Pink»">
+              </picture>
             </header>
             <div class="promo__platforms">
               <a class="promo__button" href="https://www.apple.com/app-store/">Скачать приложение</a>
@@ -90,8 +93,10 @@
           </div>
           <div class="promo__right-container">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/screen-desktop.png">
-              <img class="promo__screen-desktop" src="img/screen-tablet.png" alt="Изображение экрана с установленным приложением «Pink»">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/screen-desktop.webp 1x, img/screen-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/img/screen-tablet.webp 1x, img/screen-tablet@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/screen-desktop.png 1x, img/screen-desktop@2x.png 2x">
+              <img class="promo__screen-desktop" src="img/screen-tablet.png" srcset="img/screen-tablet@2x.png 2x" alt="Изображение экрана с установленным приложением «Pink»">
             </picture>
           </div>
         </div>
@@ -107,27 +112,39 @@
             <li class="advantages__item">
               <h3 class="advantages__title">Поднимает настроение</h3>
               <div class="advantages__image-desktop-container">
-                <img class="advantages__image" src="img/iphone-screen-1.png" width="165" height="294" alt="Изображение смартфона, с установленным приложением «Pink»">
+                <picture>
+                  <source type="image/webp" srcset="img/iphone-screen-1.webp 1x, img/iphone-screen-1@2x.webp 2x">
+                  <img class="advantages__image" src="img/iphone-screen-1.png" srcset="img/iphone-screen-1@2x.png 2x" width="165" height="294" alt="Изображение смартфона, с установленным приложением «Pink»">
+                </picture>
               </div>
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
               <div class="advantages__image-desktop-container">
-                <img class="advantages__image" src="img/iphone-screen-2.png" width="165" height="294" alt="Изображение смартфона, с установленным приложением «Pink»">
+                <picture>
+                  <source type="image/webp" srcset="img/iphone-screen-2.webp 1x, img/iphone-screen-2@2x.webp 2x">
+                  <img class="advantages__image" src="img/iphone-screen-2.png" srcset="img/iphone-screen-2@2x.png 2x" width="165" height="294" alt="Изображение смартфона, с установленным приложением «Pink»">
+                </picture>
               </div>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Заводит новых друзей</h3>
               <div class="advantages__image-desktop-container">
-                <img class="advantages__image" src="img/iphone-screen-3-desktop.png" width="165" height="294" alt="Изображение смартфона, с установленным приложением «Pink»">
+                <picture>
+                  <source type="image/webp" srcset="img/iphone-screen-3-desktop.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                  <img class="advantages__image" src="img/iphone-screen-3-desktop.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="165" height="294" alt="Изображение смартфона, с установленным приложением «Pink»">
+                </picture>
               </div>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
           <div class="advantages__image-mobile-container">
-            <img class="advantages__image-mobile" src="img/iphone-3.png" width="157" height="320" alt="Изображение смартфона, с установленным приложением «Pink»">
+            <picture>
+              <source type="image/webp" srcset="img/iphone-3.webp 1x, img/iphone-3@2x.webp 2x">
+              <img class="advantages__image-mobile" src="img/iphone-3.png" srcset="img/iphone-3@2x.png 2x" width="157" height="320" alt="Изображение смартфона, с установленным приложением «Pink»">
+            </picture>
           </div>
         </div>
       </section>
@@ -139,8 +156,12 @@
             <p class="advantages-add__caption"><a href="">Узнать больше об исследовании</a></p>
           </div>
           <div class="advantages-add__image-container">
-            <img class="advantages-add__image-tablet" src="img/timer.svg" width="238" height="276" alt="Изображение часов с цифрой 24 на них">
-            <img class="advantages-add__image-desktop" src="img/timer.svg" width="298" height="345" alt="Изображение часов с цифрой 24 на них">
+            <svg class="advantages-add__image-tablet" width="238" height="276">
+              <use xlink:href="img/sprite.svg#clock-timer"></use>
+            </svg>
+            <svg class="advantages-add__image-desktop" width="298" height="345">
+              <use xlink:href="img/sprite.svg#clock-timer"></use>
+            </svg>
           </div>
         </div>
       </section>
