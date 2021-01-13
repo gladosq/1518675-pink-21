@@ -63,23 +63,14 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .advantages-add__image-desktop {
-    display: none;
-  }
-}
-
 @media (min-width: $half-desktop-size) {
   .advantages-add {
     background-color: $basic-grey;
   }
 
   .advantages-add__image-tablet {
-    display: none;
-  }
-
-  .advantages-add__image-desktop {
-    display: block;
+    width: 298px;
+    height: 345px;
   }
 
   .advantages-add__image-container::before {

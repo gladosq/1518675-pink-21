@@ -136,6 +136,12 @@
     padding: 0;
   }
 
+  .reviews__buttons-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
   .reviews__prev,
   .reviews__next {
     display: block;
@@ -145,50 +151,33 @@
     background: transparent;
     position: relative;
     cursor: pointer;
-  }
-
-  .reviews__prev::before,
-  .reviews__prev::after {
-    content: "";
-    position: absolute;
-    width: 35px;
-    height: 2px;
-    background-color: $dark-blue;
-    opacity: 0.3;
+    background-color: red;
   }
 
   .reviews__prev::before {
-    transform: rotate(45deg);
-    top: -145px;
-    left: 0;
-  }
-
-  .reviews__prev::after {
-    transform: rotate(-45deg);
-    top: -170px;
-    left: 0;
-  }
-
-  .reviews__next::before,
-  .reviews__next::after {
     content: "";
     position: absolute;
-    width: 35px;
-    height: 2px;
-    background-color: $dark-blue;
-    opacity: 0.3;
+    top: -170px;
+    left: 20px;
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    border-left: 2px solid $basic-half-black;
+    border-top: 2px solid $basic-half-black;
+    transform: rotate(-45deg);
   }
 
   .reviews__next::before {
-    transform: rotate(-45deg);
-    top: -145px;
-    left: 878px;
-  }
-
-  .reviews__next::after {
-    transform: rotate(45deg);
+    content: "";
+    position: absolute;
     top: -170px;
-    left: 878px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    border-left: 2px solid $basic-half-black;
+    border-top: 2px solid $basic-half-black;
+    transform: rotate(135deg);
   }
 
   .reviews__toggles {
@@ -196,23 +185,22 @@
   }
 
   .reviews__next:hover::before,
-  .reviews__next:hover::after,
-  .reviews__prev:hover::before,
-  .reviews__prev:hover::after {
+  .reviews__prev:hover::before {
     opacity: 0.6;
   }
 
   .reviews__next:active::before,
-  .reviews__next:active::after,
-  .reviews__prev:active::before,
-  .reviews__prev:active::after {
+  .reviews__prev:active::before {
     opacity: 0.1;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .reviews__next::before,
-  .reviews__next::after {
-    left: 910px;
+  .reviews__prev::before {
+    left: 0;
+  }
+
+  .reviews__next::before {
+    right: 0;
   }
 }
