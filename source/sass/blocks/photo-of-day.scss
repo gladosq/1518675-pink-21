@@ -13,10 +13,12 @@
 
 .photo-of-day__comment {
   @include fonts(400, 14px, $dark-blue);
-  padding-left: 16px;
-  padding-right: 14px;
+  padding-left: 17px;
+  padding-right: 12px;
   margin: 0;
+  margin-top: -2px;
   grid-area: text;
+  line-height: 24px;
 }
 
 .photo-of-day__likes {
@@ -78,25 +80,32 @@
 
   .photo-of-day__likes {
     justify-self: end;
-    padding-right: 70px;
+    padding-right: 59px;
     padding-bottom: 0;
-    margin-top: 8px;
+    margin-top: 14px;
   }
 
   .photo-of-day__likes::before {
-    left: 160px;
+    left: 156px;
   }
 
   .photo-of-day__comment {
-    padding-bottom: 20px;
+    padding-bottom: 26px;
+    padding-left: 30px;
+    margin-top: -4px;
   }
 
   .photo-of-day__wrapper {
-    padding-bottom: 30px;
+    padding-bottom: 32px;
   }
 
   .photo-of-day__wrapper::before {
-    top: 50px;
+    top: 56px;
+  }
+
+  .photo-of-day__autor {
+    padding-top: 21px;
+    padding-left: 30px;
   }
 }
 
@@ -104,6 +113,10 @@
   .photo-of-day__container {
     max-width: 900px;
     margin: -8px auto;
+  }
+
+  .photo-of-day__wrapper {
+    padding-bottom: 39px;
   }
 
   .photo-of-day__wrapper::before {
@@ -115,6 +128,14 @@
   .photo-of-day__container {
     max-width: 940px;
     margin: -8px auto;
+  }
+
+  .photo-of-day__autor {
+    padding-left: 27px;
+  }
+
+  .photo-of-day__comment {
+    padding-left: 27px;
   }
 
   .photo-of-day__wrapper::before {

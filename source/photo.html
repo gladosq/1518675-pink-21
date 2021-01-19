@@ -49,7 +49,7 @@
                 <a href="form.html">Конкурс</a>
               </li>
               <li class="header__main-nav-item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -69,6 +69,9 @@
         <div class="photo-of-day__wrapper">
           <h2 class="visually-hidden">Фото дня</h2>
           <a href="img/panorama-desktop@2x.png"><picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/panorama-mobile.webp 1x, img/panorama-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/panorama-desktop.png 1x, img/panorama-desktop@2x.png 2x">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet.png 1x, img/panorama-tablet@2x.png 2x">
             <img class="photo-of-day__image photo-of-day__image--top-day" src="img/panorama-mobile.png" srcset="img/panorama-mobile@2x.png 2x" alt="Изображение панорамы леса с большой высоты">
@@ -170,6 +173,9 @@
         <div class="editor__wrapper">
           <h2 class="visually-hidden">Редактор фото</h2>
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-7-desktop.webp 1x, img/photo-7-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-7-tablet.webp 1x, img/photo-7-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-7-mobile.webp 1x, img/photo-7-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/photo-7-desktop.png 1x, img/photo-7-desktop@2x.png 2x">
             <source media="(min-width: 660px)" srcset="img/photo-7-tablet.png 1x, img/photo-7-tablet@2x.png 2x">
             <img class="editor__photo" src="img/photo-7-mobile.png" srcset="img/photo-7-mobile@2x.png 2x" width="280" height="374" alt="Изображение зимнего леса">

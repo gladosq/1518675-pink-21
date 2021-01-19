@@ -2,9 +2,9 @@
 .price__table-item-empty {
   @include fonts(700, 16px, $basic-white);
   text-transform: uppercase;
-  height: 94px;
+  height: 96px;
   background-color: $dark-blue;
-  min-width: 280px;
+  min-width: 276px;
 }
 
 .price__caption-price {
@@ -14,7 +14,7 @@
 .price__value {
   @include fonts(400, 14px, $dark-blue);
   position: relative;
-  height: 59px;
+  height: 56px;
   border: 2px solid $border-color;
   background: $basic-white;
   text-align: left;
@@ -23,7 +23,7 @@
 
 .price__wrapper {
   background: linear-gradient(175deg, $basic-white, $basic-white 10%, $basic-grey 10%, $basic-grey);
-  padding-top: 130px;
+  padding-top: 124px;
 }
 
 .price__table-item span {
@@ -53,7 +53,7 @@
   background: url("../img/yes.svg");
   width: 31px;
   height: 21px;
-  right: 14px;
+  right: 19px;
 }
 
 .price__value--negative::before {
@@ -62,7 +62,7 @@
   background: url("../img/no.svg");
   width: 27px;
   height: 27px;
-  right: 14px;
+  right: 21px;
 }
 
 .price__toggle {
@@ -116,6 +116,34 @@
 
 .price__toggles {
   padding-bottom: 30px;
+  padding-top: 8px;
+  padding-right: 5px;
+}
+
+.price__top-sale {
+  margin-top: -14px;
+  line-height: 24px;
+  position: relative;
+}
+
+.price__top-sale::before {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  background: linear-gradient(135deg, transparent, transparent 10%, $special-pink 10%, $special-pink 20%, transparent 20%, transparent);
+  left: -3px;
+  top: -16px;
+}
+
+.price__top-sale::after {
+  content: "Хит";
+  position: absolute;
+  font-weight: 400;
+  font-size: 14px;
+  transform: rotate(-45deg);
+  top: 3px;
+  left: 13px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -160,13 +188,14 @@
     text-align: center;
     max-width: 617px;
     margin: auto;
-    padding-top: 120px;
+    margin-top: -40px;
+    padding-top: 138px;
     padding-bottom: 70px;
     background: transparent;
   }
 
   .price {
-    background: linear-gradient(175deg, $basic-white, $basic-white 18%, $basic-grey 18%, $basic-grey);
+    background: linear-gradient(176deg, $basic-white, $basic-white 18%, $basic-grey 18%, $basic-grey);
   }
 
   .price__table-item {
@@ -179,7 +208,7 @@
   }
 
   .price__value {
-    height: 45px;
+    height: 42px;
   }
 
   .price__value-mobile {
@@ -200,8 +229,29 @@
   }
 
   .price__value--negative::before {
-    right: 64px;
-    top: 12px;
+    right: 60px;
+    top: 10px;
+  }
+
+  .price__table-item,
+  .price__table-item-empty {
+    height: 78px;
+  }
+
+  .price__top-sale {
+    padding-top: 18px;
+  }
+
+  .price__top-sale::before {
+    width: 150px;
+    height: 150px;
+    top: 2px;
+    left: -1px;
+  }
+
+  .price__top-sale::after {
+    top: 13px;
+    left: 7px;
   }
 }
 
@@ -212,7 +262,9 @@
 
   .price__wrapper {
     max-width: 941px;
-    padding-top: 180px;
+    margin-top: 28px;
+    padding-top: 160px;
+    padding-bottom: 100px;
   }
 
   .price__table,
@@ -222,9 +274,51 @@
 
   .price__value--positive::before {
     right: 100px;
+    top: 16px;
   }
 
   .price__value--negative::before {
     right: 104px;
+    top: 16px;
+  }
+
+  .price__table-item,
+  .price__table-item-empty {
+    height: 98px;
+    min-width: 200px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+
+  .price__caption-price {
+    font-size: 24px;
+    padding-left: 5px;
+    padding-bottom: 4px;
+  }
+
+  .price__value {
+    height: 56px;
+  }
+
+  .price__top-sale {
+    padding-top: 16px;
+  }
+
+  .price__top-sale::before {
+    width: 190px;
+    height: 190px;
+    top: -5px;
+  }
+
+  .price__top-sale::after {
+    top: 13px;
+    left: 14px;
+  }
+
+  .price__value-empty {
+    font-size: 18px;
+    padding-left: 22px;
+    padding-top: 0;
   }
 }

@@ -1,15 +1,19 @@
 .feedback__title {
   @include fonts(300, 24px, $dark-blue);
+  margin-top: 24px;
+  margin-bottom: 32px;
 }
 
 .feedback__text {
   @include fonts(700, 18px, $dark-blue);
+  z-index: 10;
 }
 
 .feedback__value {
   @include fonts(300, 24px, $special-pink);
   text-decoration: none;
   z-index: 8;
+  line-height: 27px;
 }
 
 .feedback__value-link {
@@ -39,9 +43,21 @@
   flex-direction: column;
 }
 
+.feedback__contact-type:nth-child(2) {
+  margin-top: 20px;
+}
+
+.feedback__contact-type:nth-child(3) {
+  margin-top: 24px;
+}
+
+.feedback__contact-type:nth-child(3) .feedback__value {
+  line-height: 32px;
+}
+
 @media (min-width: $tablet-width) {
   .feedback__wrapper {
-    padding: 0 30px 50px;
+    padding: 20px 30px 50px;
     margin: auto;
     max-width: 600px;
   }
@@ -51,11 +67,26 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 50px;
+    margin-top: -20px;
   }
 
   .feedback__contact-type {
-    padding-left: 40px;
-    padding-right: 30px;
+    padding-left: 36px;
+    padding-right: 36px;
+    margin: 4px;
+  }
+
+  .feedback__contact-type:nth-child(1) {
+    padding-left: 38px;
+  }
+
+  .feedback__contact-type:nth-child(2) {
+    margin-top: 0;
+    padding-right: 1px;
+  }
+
+  .feedback__contact-type:nth-child(3) {
+    margin-top: 0;
   }
 
   .feedback__title {
@@ -63,34 +94,48 @@
     line-height: 54px;
   }
 
-  .feedback__map-image {
-    width: 100%;
-    height: auto;
+  .feedback__value {
+    line-height: 36px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback__wrapper {
-    padding: 0 30px 50px;
+    padding: 0 0 50px;
     margin: auto;
     max-width: 880px;
   }
 
   .feedback__contacts {
+    justify-content: space-between;
+    padding-top: 10px;
     padding-bottom: 100px;
   }
 
   .feedback__title {
     font-size: 50px;
     line-height: 68px;
+    padding-top: 34px;
   }
 
   .feedback__contact-type:nth-child(2) {
-    order: 3;
+    margin-left: 14px;
+    padding-right: 10px;
+    margin-right: -10px;
+    order: 10;
   }
 
   .feedback__value {
     padding-top: 20px;
     line-height: 32px;
+  }
+
+  .feedback__contact-type:nth-child(3) {
+    padding-left: 64px;
+  }
+
+  .feedback__contact-type:nth-child(1) {
+    padding-left: 12px;
+    margin-top: 0;
   }
 }

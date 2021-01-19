@@ -61,7 +61,9 @@
   justify-content: space-between;
   min-width: 200px;
   padding-top: 36px;
-  padding-bottom: 30px;
+  padding-bottom: 37px;
+  padding-left: 20px;
+  padding-right: 24px;
 }
 
 .editor__crop {
@@ -179,7 +181,8 @@
     display: flex;
     justify-content: center;
     padding-bottom: 48px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    padding-left: 8px;
   }
 
   .editor__photo {
@@ -208,12 +211,14 @@
   .editor__crop {
     width: 22px;
     height: 22px;
+    margin-left: 10px;
     background-image: url("../img/crop-small.svg");
   }
 
   .editor__fill {
     width: 24px;
     height: 22px;
+    margin-left: 10px;
     background-image: url("../img/fill-small.svg");
   }
 
@@ -221,7 +226,7 @@
     width: 16px;
     height: 16px;
     background-image: url("../img/contrast-small.svg");
-    margin-left: 3px;
+    margin-left: 13px;
   }
 
   .editor__fill-toggle::before {
@@ -255,11 +260,12 @@
 
   .editor__button {
     min-width: 260px;
+    margin-bottom: 8px;
   }
 
   .editor__button-wrapper {
     text-align: right;
-    padding-top: 40px;
+    padding-top: 30px;
   }
 
   .editor__config {
@@ -287,6 +293,10 @@
   .gallery__caption {
     font-size: 18px;
   }
+
+  .editor__button--reset {
+    margin-top: 18px;
+  }
 }
 
 @media (min-width: $half-desktop-size) {
@@ -300,19 +310,21 @@
   .editor__wrapper {
     max-width: 900px;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
 
   .editor__crop {
     width: 44px;
     height: 44px;
     background-image: url("../img/crop.svg");
+    margin-left: 0;
   }
 
   .editor__fill {
     width: 48px;
     height: 43px;
     background-image: url("../img/fill-color.svg");
+    margin-left: 0;
   }
 
   .editor__contrast {
@@ -330,7 +342,10 @@
 
   .editor__button {
     min-width: 183px;
-    margin-right: 40px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 16px;
+    height: 50px;
   }
 
   .editor__button-wrapper {
@@ -338,7 +353,7 @@
     flex-direction: row;
     justify-content: space-between;
     min-width: 400px;
-    padding-top: 100px;
+    padding-top: 90px;
   }
 
   .editor__config {
@@ -349,12 +364,13 @@
   .editor__photo {
     max-width: 300px;
     height: auto;
-    padding-left: 60px;
+    padding-left: 67px;
+    padding-top: 37px;
   }
 
   .editor__icons {
-    padding-right: 50px;
-    padding-top: 20px;
+    padding-right: 54px;
+    padding-top: 27px;
     min-height: 180px;
   }
 
@@ -386,5 +402,9 @@
   .editor__bar-contrast::after {
     width: 0;
     height: 0;
+  }
+
+  .editor__toggles-container {
+    margin-top: -10px;
   }
 }

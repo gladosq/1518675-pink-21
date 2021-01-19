@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: 400px;
+  min-height: 393px;
   padding-top: 80px;
 }
 
@@ -18,7 +18,7 @@
   @include fonts(300, 24px);
   padding: 0;
   margin: 0;
-  padding-top: 24px;
+  padding-top: 20px;
   text-align: center;
   position: relative;
 }
@@ -31,7 +31,7 @@
   background-position: 0 0;
   width: 111px;
   height: 197px;
-  top: 146px;
+  top: 139px;
   left: 95px;
 }
 
@@ -39,7 +39,7 @@
   @include fonts(700, 18px);
   text-decoration: none;
   display: inline-block;
-  min-width: 280px;
+  min-width: 258px;
   border: 3px solid $basic-white;
   border-radius: 29px;
   padding: 10px 10px;
@@ -56,17 +56,17 @@
 
 .promo__platforms {
   background-color: $darkest-blue;
-  height: 270px;
-  padding-top: 26px;
+  height: 243px;
+  padding-top: 28px;
   text-align: center;
 }
 
 .promo__platforms-wrapper {
   display: flex;
-  width: 220px;
+  width: 205px;
   margin: auto;
   justify-content: space-between;
-  padding: 40px 40px 0 40px;
+  padding-top: 34px;
 }
 
 .promo__platforms-wrapper a:nth-child(2) {
@@ -79,7 +79,8 @@
 
 .promo__description {
   @include fonts(300, 14px);
-  padding: 0 16px;
+  line-height: 26px;
+  padding: 10px 16px;
 }
 
 .promo__screen-desktop {
@@ -127,6 +128,7 @@
   .promo__platforms {
     background: none;
     max-width: 270px;
+    padding-top: 31px;
   }
 
   .promo__mobile-image {
@@ -148,7 +150,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: -118px;
-    padding-top: 110px;
+    padding-top: 117px;
   }
 
   .promo__right-container {
@@ -173,7 +175,7 @@
     @include fonts(300, 40px);
     line-height: 48px;
     width: 229px;
-    padding-top: 20px;
+    padding-top: 16px;
   }
 
   .promo__slogan::before {
@@ -182,12 +184,23 @@
 
   .promo__description {
     font-size: 18px;
-    padding: 0;
+    padding-top: 8px;
+    margin-left: -15px;
+    padding-left: 0;
+    line-height: 24px;
+
+
     min-width: 300px;
   }
 
   .promo__button {
     margin-left: -16px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .promo__platforms-wrapper {
+    padding-top: 44px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -249,11 +262,19 @@
   }
 
   .promo__platforms-wrapper {
-    padding-top: 80px;
+    padding-top: 70px;
   }
 
   .promo__description {
     padding-top: 20px;
+  }
+
+  .promo__left-container {
+    margin-left: -60px;
+  }
+
+  .promo__right-container {
+    padding-right: 70px;
   }
 
   @media (min-resolution: 2dppx) {
