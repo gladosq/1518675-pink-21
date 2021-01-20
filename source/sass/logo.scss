@@ -1,0 +1,68 @@
+.tablet-logotype,
+.desktop-logotype,
+.footer-desktop-logotype {
+  display: none;
+}
+
+.logo {
+  margin-left: -60px;
+}
+
+.footer .logo {
+  margin: 0;
+}
+
+.logo:hover g path,
+.logo:hover path {
+  fill: $special-pink;
+}
+
+.logo:active g path {
+  fill: $basic-white;
+  opacity: 0.3;
+}
+
+.logo:active .footer-tablet-logotype path {
+  fill: $special-pink;
+  opacity: 0.3;
+}
+
+.logo:active path {
+  fill: $dark-blue;
+  opacity: 0.3;
+}
+
+.html-academy-logotype:hover path {
+  fill: $dark-blue;
+}
+
+.html-academy-logotype:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .tablet-logotype {
+    display: block;
+  }
+
+  .logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: $half-desktop-size) {
+  .tablet-logotype,
+  .footer-tablet-logotype {
+    display: none;
+  }
+
+  .desktop-logotype,
+  .footer-desktop-logotype {
+    display: block;
+  }
+
+  .logo:active .footer-desktop-logotype path {
+    fill: $special-pink;
+    opacity: 0.3;
+  }
+}

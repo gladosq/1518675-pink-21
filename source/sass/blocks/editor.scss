@@ -1,5 +1,9 @@
 .editor__wrapper {
   background-color: $basic-grey;
+  padding: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  position: relative;
 }
 
 .editor__button {
@@ -10,6 +14,18 @@
   min-height: 55px;
   border: 3px solid $special-pink;
   cursor: pointer;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.editor__button:hover {
+  background-color: $special-pink;
+  color: $basic-white;
+}
+
+.editor__button:active {
+  background-color: $special-pink;
+  color: $basic-half-white;
 }
 
 .editor__button--reset {
@@ -21,4 +37,368 @@
   border: 3px solid $dark-blue;
   opacity: 0.1;
   cursor: pointer;
+}
+
+.editor__button--reset:hover {
+  background: transparent;
+  color: $dark-blue;
+  opacity: 0.3;
+}
+
+.editor__button--reset:active {
+  background: $dark-blue;
+  color: $basic-half-white;
+  opacity: 0.3;
+}
+
+.editor__photo {
+  width: 100%;
+  height: auto;
+}
+
+.editor__icons {
+  display: flex;
+  justify-content: space-between;
+  min-width: 200px;
+  padding-top: 36px;
+  padding-bottom: 37px;
+  padding-left: 20px;
+  padding-right: 24px;
+}
+
+.editor__crop {
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/crop.svg");
+  background-repeat: no-repeat;
+}
+
+.editor__fill {
+  width: 48px;
+  height: 43px;
+  background-image: url("../img/fill.svg");
+  background-repeat: no-repeat;
+}
+
+.editor__contrast {
+  width: 33px;
+  height: 33px;
+  background-image: url("../img/contrast.svg");
+  background-repeat: no-repeat;
+  margin-top: 6px;
+}
+
+.editor__bar-crop,
+.editor__bar-fill,
+.editor__bar-contrast {
+  width: 240px;
+  height: 2px;
+  background: $dark-blue;
+  margin-bottom: 70px;
+}
+
+.editor__bar-fill,
+.editor__bar-contrast {
+  display: none;
+}
+
+.editor__config {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editor__wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: $dark-blue;
+  opacity: 0.1;
+  left: 0;
+  bottom: 200px;
+}
+
+.editor__crop-toggle,
+.editor__fill-toggle,
+.editor__contrast-toggle {
+  position: relative;
+  cursor: pointer;
+}
+
+.editor__crop-toggle::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: $basic-white;
+  border: 2px solid $special-pink;
+  border-radius: 50%;
+  right: 30px;
+  top: -6px;
+}
+
+.editor__crop-toggle:hover::before {
+  background-color: $special-pink;
+}
+
+.editor__button-wrapper {
+  max-width: 280px;
+  margin: auto;
+}
+
+@media (max-width: $mobile-width-only) {
+  .editor__crop,
+  .editor__fill,
+  .editor__contrast {
+    cursor: pointer;
+  }
+
+  .editor__crop:hover,
+  .editor__fill:hover,
+  .editor__contrast:hover {
+    filter: brightness(-200%);
+  }
+
+  .editor__current:hover {
+    filter: brightness(100%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .editor__bar-crop,
+  .editor__bar-fill,
+  .editor__bar-contrast {
+    width: 202px;
+  }
+
+  .editor__bar-fill,
+  .editor__bar-contrast {
+    display: block;
+  }
+
+  .editor__wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 48px;
+    margin-bottom: 40px;
+    padding-left: 8px;
+  }
+
+  .editor__photo {
+    padding-top: 40px;
+  }
+
+  .editor__toggles-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 14px;
+  }
+
+  .editor__icons {
+    display: flex;
+    flex-direction: column;
+    height: 162px;
+    margin-right: -160px;
+    padding-left: 10px;
+  }
+
+  .editor__bar-container {
+    margin-bottom: 0;
+    margin-top: 46px;
+  }
+
+  .editor__crop {
+    width: 22px;
+    height: 22px;
+    margin-left: 10px;
+    background-image: url("../img/crop-small.svg");
+  }
+
+  .editor__fill {
+    width: 24px;
+    height: 22px;
+    margin-left: 10px;
+    background-image: url("../img/fill-small.svg");
+  }
+
+  .editor__contrast {
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/contrast-small.svg");
+    margin-left: 13px;
+  }
+
+  .editor__fill-toggle::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: $basic-white;
+    border: 2px solid $special-pink;
+    border-radius: 50%;
+    right: 160px;
+    top: -6px;
+  }
+
+  .editor__contrast-toggle::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: $basic-white;
+    border: 2px solid $special-pink;
+    border-radius: 50%;
+    right: 100px;
+    top: -6px;
+  }
+
+  .editor__fill-toggle:hover::before,
+  .editor__contrast-toggle:hover::before {
+    background-color: $special-pink;
+  }
+
+  .editor__button {
+    min-width: 260px;
+    margin-bottom: 8px;
+  }
+
+  .editor__button-wrapper {
+    text-align: right;
+    padding-top: 30px;
+  }
+
+  .editor__config {
+    padding-left: 28px;
+  }
+
+  .editor__wrapper::before {
+    width: 0;
+    height: 0;
+  }
+
+  .editor__bar-crop::after,
+  .editor__bar-fill::after,
+  .editor__bar-contrast::after {
+    content: "";
+    position: absolute;
+    width: 270px;
+    height: 1px;
+    background: $dark-blue;
+    opacity: 0.1;
+    left: -40px;
+    top: 40px;
+  }
+
+  .gallery__caption {
+    font-size: 18px;
+  }
+
+  .editor__button--reset {
+    margin-top: 18px;
+  }
+}
+
+@media (min-width: $half-desktop-size) {
+  .editor__wrapper {
+    max-width: 910px;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .editor__crop {
+    width: 44px;
+    height: 44px;
+    background-image: url("../img/crop.svg");
+    margin-left: 0;
+  }
+
+  .editor__fill {
+    width: 48px;
+    height: 43px;
+    background-image: url("../img/fill-color.svg");
+    margin-left: 0;
+  }
+
+  .editor__contrast {
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/contrast-color.svg");
+    margin-left: 8px;
+  }
+
+  .editor__bar-crop,
+  .editor__bar-fill,
+  .editor__bar-contrast {
+    width: 288px;
+  }
+
+  .editor__button {
+    min-width: 183px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 16px;
+    height: 50px;
+  }
+
+  .editor__button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 400px;
+    padding-top: 90px;
+  }
+
+  .editor__config {
+    padding-right: 60px;
+    padding-top: 6px;
+  }
+
+  .editor__photo {
+    max-width: 300px;
+    height: auto;
+    padding-left: 70px;
+    padding-top: 37px;
+  }
+
+  .editor__icons {
+    padding-right: 54px;
+    padding-top: 27px;
+    min-height: 180px;
+  }
+
+  .editor__crop-toggle::before {
+    right: 210px;
+  }
+
+  .editor__fill-toggle::before {
+    right: 30px;
+  }
+
+  .editor__contrast-toggle::before {
+    right: 120px;
+  }
+
+  .editor__bar-crop::after,
+  .editor__bar-fill::after,
+  .editor__bar-contrast::after {
+    content: "";
+    position: absolute;
+    width: 410px;
+    height: 1px;
+    background: $dark-blue;
+    opacity: 0.1;
+    left: -90px;
+    top: 34px;
+  }
+
+  .editor__bar-contrast::after {
+    width: 0;
+    height: 0;
+  }
+
+  .editor__toggles-container {
+    margin-top: -10px;
+  }
 }

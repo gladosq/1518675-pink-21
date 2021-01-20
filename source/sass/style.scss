@@ -1,6 +1,8 @@
 @import "mixins-variables.scss";
 @import "font-family.scss";
 @import "global.scss";
+@import "logo.scss";
+@import "modal.scss";
 @import "blocks/header.scss";
 @import "blocks/promo.scss";
 @import "blocks/advantages.scss";
@@ -8,6 +10,7 @@
 @import "blocks/reviews.scss";
 @import "blocks/price.scss";
 @import "blocks/feedback.scss";
+@import "blocks/map.scss";
 @import "blocks/footer.scss";
 @import "blocks/contest.scss";
 @import "blocks/photo-header.scss";

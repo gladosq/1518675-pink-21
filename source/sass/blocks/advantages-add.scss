@@ -3,15 +3,19 @@
   width: 170px;
   line-height: 36px;
   margin-bottom: 0;
+  padding-top: 20px;
 }
 
 .advantages-add__description {
   @include fonts(400, 14px, $dark-blue);
+  margin-top: 12px;
+  margin-bottom: 0;
   line-height: 24px;
 }
 
 .advantages-add__caption {
   @include fonts(400, 14px, $special-pink);
+  margin-top: 6px;
 }
 
 .advantages-add__wrapper {
@@ -20,6 +24,7 @@
   padding: 50px 20px 30px;
   max-width: 940px;
   margin: auto;
+  padding-bottom: 84px;
 }
 
 .advantages-add__image-container {
@@ -28,6 +33,7 @@
   width: 500px;
   display: flex;
   flex-direction: row-reverse;
+  padding-top: 3px;
 }
 
 .advantages-add__content-container {
@@ -41,19 +47,19 @@
 .advantages-add__image-container::before {
   content: "";
   position: absolute;
-  width: 158px;
-  height: 158px;
+  width: 169px;
+  height: 169px;
   border: 18px solid $special-pink;
   border-radius: 50%;
-  top: 59px;
-  right: 22px;
+  top: 58px;
+  right: 16px;
 }
 
 .advantages-add__image-container::after {
   @include fonts(700, 96px, $special-pink);
   content: "24";
   position: absolute;
-  top: 138px;
+  top: 144px;
   right: 64px;
 }
 
@@ -63,47 +69,42 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .advantages-add__image-desktop {
-    display: none;
-  }
-}
-
 @media (min-width: $half-desktop-size) {
   .advantages-add {
     background-color: $basic-grey;
   }
 
-  .advantages-add__image-tablet {
-    display: none;
+  .advantages-add__wrapper {
+    padding-top: 170px;
+    padding-left: 10px;
+    padding-bottom: 66px;
   }
 
-  .advantages-add__image-desktop {
-    display: block;
+  .advantages-add__image-tablet {
+    width: 298px;
+    height: 345px;
+    padding-top: 48px;
   }
 
   .advantages-add__image-container::before {
     content: "";
-    position: absolute;
     width: 215px;
     height: 215px;
-    border: 18px solid $special-pink;
-    border-radius: 50%;
-    top: 69px;
-    right: 22px;
+    top: 120px;
+    left: 24px;
   }
 
   .advantages-add__image-container::after {
-    @include fonts(700, 120px, $special-pink);
-    content: "24";
-    position: absolute;
-    top: 175px;
+    font-size: 120px;
+    top: 230px;
     right: 80px;
   }
 
   .advantages-add__description {
-    @include fonts(400, 18px, $dark-blue);
+    font-size: 18px;
     line-height: 30px;
+    padding-bottom: 26px;
+    min-width: 580px;
   }
 
   .advantages-add__caption {
@@ -111,6 +112,16 @@
   }
 
   .advantages-add__content-container {
-    padding-top: 75px;
+    padding-top: 98px;
+    padding-left: 72px;
+  }
+
+  .advantages-add__decoration-text {
+    display: none;
+  }
+
+  .advantages-add__title {
+    width: 300px;
+    padding-bottom: 10px;
   }
 }
