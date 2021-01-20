@@ -68,7 +68,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $half-desktop-size) {
   .photo-header__wrapper {
     height: 337px;
     background: url("../img/back-desktop.png");

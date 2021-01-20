@@ -204,9 +204,10 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin-top: 18px;
-    padding-left: 8px;
-    padding-right: 8px;
+    margin-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 922px;
   }
 
   .advantages__slogan {
@@ -234,6 +235,7 @@
     max-width: 240px;
     max-height: none;
     padding: 0 20px;
+    overflow: hidden;
   }
 
   .advantages__image-desktop-container::before {

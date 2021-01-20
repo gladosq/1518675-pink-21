@@ -164,10 +164,11 @@
   }
 
   .header__main-nav {
-    max-width: 900px;
+    max-width: 940px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    margin-top: -3px;
   }
 
   .header__wrapper-top {
@@ -175,6 +176,7 @@
     padding-top: 30px;
     padding-bottom: 20px;
     padding-left: 0;
+    margin-left: -20px;
   }
 
   .header__main-nav--closed .header__wrapper-top {
@@ -231,19 +233,5 @@
     width: 100%;
     background-color: $basic-white;
     bottom: 8px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .header__main-nav {
-    max-width: 940px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    margin-top: -3px;
-  }
-
-  .header__wrapper-top {
-    margin-left: -20px;
   }
 }

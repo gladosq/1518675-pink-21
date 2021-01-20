@@ -600,11 +600,6 @@
     grid-gap: 26px;
   }
 
-  .footer__wrapper {
-    max-width: 890px;
-    margin: auto;
-  }
-
   .contest__feedback-info {
     display: flex;
     justify-content: space-around;
@@ -672,15 +667,99 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $half-desktop-size) {
+  .contest__form {
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+      "name device"
+      "feedback feedback"
+      "achievments achievments"
+      "comment comment"
+      "button button";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 26px;
+    min-width: 960px;
+  }
+
+  .contest__feedback-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-bottom: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .contest__input-wrapper {
+    padding: 0;
+    width: 370px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 16px;
+  }
+
+  .contest__input-wrapper:nth-child(2)::before {
+    right: 32px;
+    top: 18px;
+  }
+
+  .contest__input-wrapper:nth-child(3)::before {
+    right: 58px;
+    top: 18px;
+  }
+
+  .contest__form-name-item:nth-child(3) {
+    padding-bottom: 0;
+  }
+
+  .contest__form-achievements {
+    padding-bottom: 0;
+    margin-top: 72px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .contest__form-achievements .contest__form-label {
+    padding-top: 10px;
+  }
+
+  .contest__achievements-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 26px;
+    padding-right: 6px;
+    margin-right: -12px;
+    margin-left: 14px;
+    padding-top: 35px;
+  }
+
+  .contest__achievement-item {
+    width: 270px;
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+  .contest__comment {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .contest__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   .contest__header {
     background: url("../img/back-desktop.png");
     background-size: cover;
     height: 290px;
-  }
-
-  .contest__form {
-    min-width: 980px;
   }
 
   .footer__wrapper {
@@ -713,16 +792,8 @@
     padding-left: 36px;
   }
 
-  .contest__feedback-info {
-    padding-bottom: 7px;
-  }
-
   .contest__feedback-info legend {
     padding-top: 28px;
-  }
-
-  .contest__input-wrapper {
-    padding-top: 16px;
   }
 
   .contest__input-wrapper:nth-child(2) {
@@ -737,30 +808,9 @@
     padding-left: 16px;
   }
 
-  .contest__input-wrapper:nth-child(2)::before {
-    right: 32px;
-    top: 18px;
-  }
-
-  .contest__input-wrapper:nth-child(3)::before {
-    right: 58px;
-    top: 18px;
-  }
-
-  .contest__form-achievements {
-    margin-top: 72px;
-  }
-
-  .contest__achievements-list {
-    padding-left: 26px;
-    padding-right: 0;
-    margin-right: -12px;
-    margin-left: 14px;
-    padding-top: 32px;
-  }
-
   .contest__achievement-item:nth-child(1) {
     order: 1;
+    padding-top: 0;
   }
 
   .contest__achievement-item:nth-child(3) {
@@ -796,6 +846,14 @@
 
   .contest__wrapper {
     margin-bottom: -30px;
+  }
+
+  .contest__device {
+    margin-right: 10px;
+  }
+
+  .contest__form-name {
+    margin-left: -8px;
   }
 
   @media (min-resolution: 2dppx) {

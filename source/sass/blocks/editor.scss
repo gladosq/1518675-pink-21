@@ -301,15 +301,9 @@
 
 @media (min-width: $half-desktop-size) {
   .editor__wrapper {
-    max-width: 860px;
-    margin: auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .editor__wrapper {
-    max-width: 900px;
+    max-width: 910px;
     justify-content: space-between;
+    margin: auto;
     margin-bottom: 40px;
   }
 
@@ -357,14 +351,14 @@
   }
 
   .editor__config {
-    padding-right: 55px;
+    padding-right: 60px;
     padding-top: 6px;
   }
 
   .editor__photo {
     max-width: 300px;
     height: auto;
-    padding-left: 67px;
+    padding-left: 70px;
     padding-top: 37px;
   }
 

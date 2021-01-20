@@ -134,7 +134,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $half-desktop-size) {
   .gallery__list {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 940px;

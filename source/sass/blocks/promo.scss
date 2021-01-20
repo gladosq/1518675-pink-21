@@ -216,7 +216,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $half-desktop-size) {
   .promo {
     background: url("../img/back-desktop.png");
     background-size: cover;
@@ -225,7 +225,7 @@
   }
 
   .promo__wrapper {
-    max-width: 1000px;
+    max-width: 960px;
     margin: -108px auto auto auto;
     min-height: 742px;
   }
@@ -236,7 +236,7 @@
     background-image: url("../img/phone-desktop.png");
     background-repeat: no-repeat;
     background-position: 0 0;
-    width: 1050px;
+    width: 900px;
     height: 645px;
     left: -480px;
     top: 97px;
@@ -270,17 +270,18 @@
   }
 
   .promo__left-container {
-    margin-left: -60px;
+    margin-left: -80px;
   }
 
   .promo__right-container {
-    padding-right: 70px;
+    padding-right: 50px;
   }
 
   @media (min-resolution: 2dppx) {
     .promo {
       background: url("../img/back-desktop@2x.png");
       background-size: cover;
+      background-position: 50% 0;
     }
 
     .promo__right-container::before {

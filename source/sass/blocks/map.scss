@@ -64,25 +64,12 @@
   }
 
   .map__decoration-wrapper {
-    margin-bottom: -130px;
+    margin-bottom: -110px;
+    margin-top: -226px;
   }
 
   .map__widget {
-    height: 550px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .map__decoration-left {
-    background: linear-gradient(10deg, transparent, transparent 50%, white 50%, white);
-  }
-
-  .map__decoration-right {
-    background: linear-gradient(-10deg, transparent, transparent 50%, white 50%, white);
-  }
-
-  .map__decoration-wrapper {
-    margin-bottom: -170px;
-    margin-top: -226px;
+    height: 500px;
+    margin-bottom: -42px;
   }
 }
