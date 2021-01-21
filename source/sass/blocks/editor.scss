@@ -71,6 +71,7 @@
   height: 44px;
   background-image: url("../img/crop.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .editor__fill {
@@ -78,6 +79,7 @@
   height: 43px;
   background-image: url("../img/fill.svg");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .editor__contrast {
@@ -86,6 +88,7 @@
   background-image: url("../img/contrast.svg");
   background-repeat: no-repeat;
   margin-top: 6px;
+  cursor: pointer;
 }
 
 .editor__bar-crop,

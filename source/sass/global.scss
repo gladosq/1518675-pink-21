@@ -1,14 +1,3 @@
-.page {
-  font-family: "Opensans", "Arial", sans-serif;
-  line-height: 28px;
-  height: 100%;
-}
-
-.page__body {
-  min-height: 100%;
-  margin: 0;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -20,37 +9,4 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.button {
-  @include fonts(700, 18px, $basic-white);
-  font-family: inherit;
-  text-transform: uppercase;
-  width: 277px;
-  height: 60px;
-  background-color: $special-green;
-  border: 2px solid $special-green;
-  border-radius: 2px;
-  cursor: pointer;
-  outline: none;
-}
-
-.button:hover {
-  background-color: $special-green-hover;
-  border: 2px solid $special-green-hover;
-}
-
-.button:active {
-  background-color: $special-green-hover;
-  border: 2px solid $special-green-hover;
-  color: $basic-half-white;
-}
-
-.button:disabled {
-  background-color: $border-color;
-  border: 2px solid $border-color;
-}
-
-.modal-show {
-  display: block;
 }

@@ -1,0 +1,27 @@
+.tablet-logotype,
+.desktop-logotype,
+.footer-desktop-logotype {
+  display: none;
+}
+
+.html-academy-logotype:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .tablet-logotype {
+    display: block;
+  }
+}
+
+@media (min-width: $half-desktop-size) {
+  .tablet-logotype,
+  .footer-tablet-logotype {
+    display: none;
+  }
+
+  .desktop-logotype,
+  .footer-desktop-logotype {
+    display: block;
+  }
+}

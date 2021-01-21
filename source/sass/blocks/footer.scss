@@ -18,6 +18,10 @@
   text-decoration: none;
 }
 
+.footer .logo {
+  margin: 0;
+}
+
 .footer__logo-image {
   padding: 0 5px;
 }
@@ -70,6 +74,14 @@
 
 .footer__copyright-link {
   padding-top: 2px;
+}
+
+.footer__copyright-text {
+  cursor: pointer;
+}
+
+.footer__copyright:hover .html-academy-logotype path {
+  fill: $dark-blue;
 }
 
 @media (min-width: $tablet-width) {
