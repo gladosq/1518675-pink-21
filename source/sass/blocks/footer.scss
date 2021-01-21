@@ -8,6 +8,7 @@
 .footer__copyright-text {
   @include fonts(400, 14px, $dark-blue);
   padding-right: 16px;
+  cursor: pointer;
 }
 
 .footer__wrapper {
@@ -74,10 +75,6 @@
 
 .footer__copyright-link {
   padding-top: 2px;
-}
-
-.footer__copyright-text {
-  cursor: pointer;
 }
 
 .footer__copyright:hover .html-academy-logotype path {
